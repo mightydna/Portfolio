@@ -4,11 +4,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 75px;
     #hero_content {
         display: flex;
         flex-direction: row;
         gap: 70px;
+        margin-bottom: 75px;
         #hero_img {
             height: 520px;
             width: 500px;
@@ -19,11 +20,10 @@ section {
         #hero_block {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-right: 70px;
             #hero_text_block {
                 display: flex;
                 flex-direction: column;
+                margin-right: 70px;
                 h2 {
                     color: @textcolorwhite;
                     padding: 0px;
@@ -56,7 +56,7 @@ section {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                
+                margin-left: 60px;
                 #link_icon_box {
                     display: flex;
                     flex-direction: row;
@@ -67,22 +67,23 @@ section {
                     .link_icon {
                         height: 50px;
                         width: 50px;
+                        filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(1472%) hue-rotate(341deg) brightness(105%) contrast(103%);
                         cursor: pointer;
                     }
                 }
                 #link_icon_bar {
                     height: 3px;
-                    right: 0;
-                    width: 230px;
-                    position: absolute;
+                    width: 100%;
                     background-color: @backgroundcolorbright;
                 }
             }
         }
     }
     #hero_down_arrow {
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 80px;
+        filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(1795%) hue-rotate(131deg) brightness(92%) contrast(102%);
+        margin-bottom: 75px;
         cursor: pointer;
     }
 }
