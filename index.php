@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/styles/layouts/fonts.css">
+    <link rel="stylesheet" href="resources/styles/fonts.css">
     <link rel="stylesheet/less" type="text/css" href="resources/styles/base/all.less" />
     <script src="resources/vendors/less.js-4.2.1/dist/less.js" type="text/javascript"></script>
     <title>Mein Portfolio</title>

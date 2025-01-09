@@ -1,0 +1,32 @@
+header {
+    height: 130px;
+    background-color: @backgroundcolordark;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    menu {
+        margin: 0px 50px 0px 0px;
+        padding: 0px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            list-style: none;
+            li {  
+                a {
+                    color: @textcolorwhite;
+                    text-decoration: none;
+                    font-size: 26px;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: @accentcolorgreen;
+                    text-underline-offset: 6px;
+                    
+                }
+            }
+        }
+    }
+}
