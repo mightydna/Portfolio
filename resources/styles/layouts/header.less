@@ -1,29 +1,40 @@
 header {
-    height: 130px;
+    height: 15vh;
     background-color: @backgroundcolordark;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    menu {
+    #logo {
+        height: 55px;
+        width: 145px;
+    }
+    nav {
         margin: 0px 50px 0px 0px;
         padding: 0px;
         ul {
             display: flex;
             flex-direction: row;
-            gap: 50px;
+            gap: 40px;
             list-style: none;
             li {  
+                .menu_box {
+                    display: flex;
+                    justify-content: center;
+                    width: 110%;
+                    border-bottom: 3px solid @backgroundcolordark;
+                }
                 a {
                     color: @textcolorwhite;
                     text-decoration: none;
-                    font-size: 26px;
+                    font-size: 22px;
+                    text-align: center;
+                    font-family: 'Inter';
+                    font-weight: medium;
                 }
-                a:hover {
-                    text-decoration: underline;
-                    text-decoration-color: @accentcolorgreen;
-                    text-underline-offset: 6px;
+                .menu_box:hover {
+                    border-bottom: 3px solid @accentcolorgreen;
                     
                 }
             }

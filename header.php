@@ -1,12 +1,12 @@
 <header>  
     <img src="resources/icons/points-icon.svg" id="logo">
-    <menu id="menu">
+    <nav id="menu">
         <ul>
-            <li><a href="">Über Mich</a></li>
-            <li><a href="">Meine Skills</a></li>
-            <li><a href="">Meine Erfahrung</a></li>
-            <li><a href="">Meine Projekte</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><div class="menu_box"><a href="">Über Mich</a></div></li>
+            <li><div class="menu_box"><a href="">Meine Skills</a></div></li>
+            <li><div class="menu_box"><a href="">Meine Erfahrung</a></div></li>
+            <li><div class="menu_box"><a href="">Meine Projekte</a></div></li>
+            <li><div class="menu_box"><a href="">Kontakt</a></div></li>
         </ul>
-    </menu>
+    </nav>
 </header>
