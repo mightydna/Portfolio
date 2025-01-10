@@ -1,4 +1,4 @@
-<section>
+<section id="hero">
     <div id="hero_content">
         <img src="resources/images/Hackerman.jpg" id="hero_img">
         <div id="hero_block">
