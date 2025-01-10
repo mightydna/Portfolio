@@ -1,17 +1,16 @@
 #hero {
-    height: 78vh;
+    height: 85vh;
     background-color: @backgroundcolordark;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 75px;
+    justify-content: space-around;
     #hero_content {
         display: flex;
         flex-direction: row;
         gap: 70px;
-        margin-bottom: 75px;
         #hero_img {
-            height: 520px;
+            height: 500px;
             width: 500px;
             border: 12px solid @accentcolorgreen;
             border-radius: 360px;
@@ -25,12 +24,14 @@
                 flex-direction: column;
                 margin-right: 70px;
                 h2 {
-                    color: @textcolorwhite;
+                    color: #F5F5F5;
                     padding: 0px;
                     margin: 50px 0px 0px 0px;
                     font-size: 48px;
                     font-family: 'Inter';
-                    font-weight: bold;
+                    font-weight: 700;
+                    line-height: 58px;
+                    letter-spacing: 1px;
                 }
                 #subheader {
                     color: @accentcolorgreen;
@@ -38,17 +39,19 @@
                     margin: 0px 0px 35px 0px;
                     font-size: 48px;
                     font-family: 'Inter';
-                    font-weight: bold;
+                    font-weight: 700;
+                    line-height: 58px;
+                    letter-spacing: 1px;
                 }
                 p {
-                    color: @textcolorwhite;
+                    color: #DDDDDD;
                     padding: 0px 15px 0px 0px;
                     margin: 0px 0px 70px 0px;
                     font-size: 20px;
                     font-family: 'Inter';
-                    font-weight: normal;
+                    font-weight: 400;
                     color: rgb(220 220 220);
-                    line-height: 1.4;
+                    line-height: 30px;
                     word-spacing: 2px;
                 }
             }
@@ -80,10 +83,9 @@
         }
     }
     #hero_down_arrow {
-        height: 70px;
-        width: 80px;
+        height: 68px;
+        width: 60px;
         filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(1795%) hue-rotate(131deg) brightness(92%) contrast(102%);
-        margin-bottom: 75px;
         cursor: pointer;
     }
 }
