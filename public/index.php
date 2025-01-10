@@ -13,6 +13,7 @@
     require '../blocks/main/header.php';
     require '../blocks/hero.php';
     require '../blocks/about.php';
+    require '../blocks/skills.php';
     ?>
     
 </body>
