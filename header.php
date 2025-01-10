@@ -1,5 +1,5 @@
 <header>  
-    <img src="resources/icons/points-icon.svg" id="logo">
+    <p id="logo">DOMINIK</p>
     <nav id="menu">
         <ul>
             <li><div class="menu_box"><a href="">Über Mich</a></div></li>
