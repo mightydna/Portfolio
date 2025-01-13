@@ -3,6 +3,9 @@
         <h2 id="projects_header">Meine Projekte</h2>
         <div id="projects_header_bar"></div>
     </div>
+    <div id="projects_text_container">
+        <p id="projects_desc_text"> Durch die Entwicklung von sechs unterschiedlichen Webprojekten, darinter ..., habe ich umfangreiche Erfahrung in modernen Webtechnologien, responsivem Design und  API-Integration gesammelt. Jedes Projekt hat meine Fähigkeiten im Umgang mit anspruchsvollen Anforderungen und der Umsetzung kreativer sowie funktionaler Lösungen erweitert.</p>
+    </div>
     <div id="projects_main_container">
         <div class="project_box">
             <img src="" class="project_box_img">
