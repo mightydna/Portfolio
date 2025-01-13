@@ -39,24 +39,58 @@
                 justify-content: center;
                 height: 328px;
                 width: 328px;
-                background-color: rgba(0, 102, 255, 0.4);
-                //visibility: hidden;
+                background-color: rgba(0, 102, 255, 0.7);
+                visibility: hidden;
                 .project_box_header {
                     padding: 0px;
-                    margin: 0px;
+                    margin: 0px 0px 25px 0px;
                     color: @textcolorwhite;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    text-align: center;
                 }
                 .project_box_text {
                     padding: 0px;
-                    margin: 0px;
+                    margin: 0px 0px 30px 0px;
                     width: 272px;
+                    max-height: 125px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
                     text-align: center;
                     color: @textcolorwhite;
                 }
                 .projects_button_container {
                     display: flex;
                     flex-direction: row;
-                    gap: 50px;
+                    gap: 20px;
+                    .projects_live_button {
+                        color: @textcolorwhite;
+                        background-color: transparent;
+                        border: 2px solid @textcolorwhite;
+                        border-radius: 15px;
+                        text-decoration: none;
+                        text-align: center;
+                        width: 100px;
+                        height: 30px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+                    .projects_github_button {
+                        color: @textcolorwhite;
+                        background-color: transparent;
+                        border: 2px solid @textcolorwhite;
+                        border-radius: 15px;
+                        text-decoration: none;
+                        text-align: center;
+                        width: 100px;
+                        height: 30px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
                 }
             }
             .project_box_overlay:hover div {
@@ -66,24 +100,68 @@
                 justify-content: center;
                 height: 328px;
                 width: 328px;
-                background-color: rgba(0, 102, 255, 0.4);
+                background-color: rgba(0, 102, 255, 0.7);
                 visibility: visible;
                 .project_box_header {
                     padding: 0px;
-                    margin: 0px;
+                    margin: 0px 0px 25px 0px;
                     color: @textcolorwhite;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    text-align: center;
                 }
                 .project_box_text {
                     padding: 0px;
-                    margin: 0px;
+                    margin: 0px 0px 30px 0px;
                     width: 272px;
+                    max-height: 125px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
                     text-align: center;
                     color: @textcolorwhite;
                 }
                 .projects_button_container {
                     display: flex;
                     flex-direction: row;
-                    gap: 50px;
+                    gap: 20px;
+                    .projects_live_button {
+                        color: @textcolorwhite;
+                        background-color: transparent;
+                        border: 2px solid @textcolorwhite;
+                        border-radius: 15px;
+                        text-decoration: none;
+                        text-align: center;
+                        width: 100px;
+                        height: 30px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        transition-duration: 0.4s;
+                    }
+                    .projects_github_button {
+                        color: @textcolorwhite;
+                        background-color: transparent;
+                        border: 2px solid @textcolorwhite;
+                        border-radius: 15px;
+                        text-decoration: none;
+                        text-align: center;
+                        width: 100px;
+                        height: 30px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        transition-duration: 0.4s;
+                    }
+                    .projects_live_button:hover {
+                        background-color: rgba(255,255,255, 0.5);
+                        box-shadow: 0 0px 16px 6px rgba(255,255,255,0.25);
+                    }
+                    .projects_github_button:hover {
+                        background-color: rgba(255,255,255, 0.5);
+                        box-shadow: 0 0px 16px 6px rgba(255,255,255,0.25);
+                    }
                 }
             }
         }

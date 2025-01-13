@@ -9,11 +9,37 @@
             <div class="project_box_overlay">
                 <div>
                     <h3 class="project_box_header">Beispiel</h3>
-                    <p class="project_box_text">Beispieltext</p>
-                    <div class="projects_button_container">
-                        <button class="projects_live_button">Live</button>
-                        <button class="projects_github_button">GiTHUB</button>
-                    </div>
+                    <p class="project_box_text">Entwicklung eines skalierbaren Online-Shops mit benutzerfreundlicher Navigation und Integration von Zahlungs-Gateways</p>
+                    <span class="projects_button_container">
+                        <a class="projects_live_button" href="http:\\www.google.de" target="_blank">Live</a>
+                        <a class="projects_github_button" href="http:\\www.google.de" target="_blank">GitHub</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="" class="project_box_img">
+            <div class="project_box_overlay">
+                <div>
+                    <h3 class="project_box_header">Beispiel</h3>
+                    <p class="project_box_text">Entwicklung eines skalierbaren Online-Shops mit benutzerfreundlicher Navigation und Integration von Zahlungs-Gateways</p>
+                    <span class="projects_button_container">
+                        <a class="projects_live_button" href="http:\\www.google.de" target="_blank">Live</a>
+                        <a class="projects_github_button" href="http:\\www.google.de" target="_blank">GitHub</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="" class="project_box_img">
+            <div class="project_box_overlay">
+                <div>
+                    <h3 class="project_box_header">Beispiel</h3>
+                    <p class="project_box_text">Entwicklung eines skalierbaren Online-Shops mit benutzerfreundlicher Navigation und Integration von Zahlungs-Gateways</p>
+                    <span class="projects_button_container">
+                        <a class="projects_live_button" href="http:\\www.google.de" target="_blank">Live</a>
+                        <a class="projects_github_button" href="http:\\www.google.de" target="_blank">GitHub</a>
+                    </span>
                 </div>
             </div>
         </div>
