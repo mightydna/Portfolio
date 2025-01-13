@@ -14,6 +14,7 @@
     require '../blocks/hero.php';
     require '../blocks/about.php';
     require '../blocks/skills.php';
+    require '../blocks/webprojects.php';
     ?>
     
 </body>
