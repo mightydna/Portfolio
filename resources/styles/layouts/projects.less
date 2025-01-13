@@ -1,0 +1,78 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: @backgroundcolorbright;
+    #projects_header_box {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 60px 60px;
+        #projects_header {
+            color: @textcolorwhite;
+            padding: 0px;
+            margin: 0px;
+        }
+        #projects_header_bar {
+            height: 3px;
+            width: 100vw;
+            background-color: @accentcolororange;
+        }
+    }
+    #projects_main_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .project_box {
+            display: flex;
+            flex-direction: column;
+            height: 328px;
+            width: 328px;
+            background-image: url("../../../resources/images/test.jpg");
+            background-position: center;
+            cursor: pointer;
+            .project_box_overlay div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 328px;
+                width: 328px;
+                background-color: rgba(0, 102, 255, 0.4);
+                visibility: hidden;
+                .project_box_header {
+                    color: @textcolorwhite;
+                }
+                .project_box_text {
+                    color: @textcolorwhite;
+                }
+                .projects_button_container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50px;
+                }
+            }
+            .project_box_overlay:hover div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 328px;
+                width: 328px;
+                background-color: rgba(0, 102, 255, 0.4);
+                visibility: visible;
+                .project_box_header {
+                    color: @textcolorwhite;
+                }
+                .project_box_text {
+                    color: @textcolorwhite;
+                }
+                .projects_button_container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50px;
+                }
+            }
+        }
+    }
+}
