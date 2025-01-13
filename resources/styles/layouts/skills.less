@@ -61,13 +61,13 @@
             background-color: @accentcolororange;
         }
     }
-    #skills_icon_line_1 {
+    .skills_icon_line {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 1037px;
-        margin: 0px 50px 0px 50px;
+        margin: 0px 50px 60px 50px;
         .skill_box_container {
             display: flex;
             flex-direction: row;
@@ -98,15 +98,35 @@
                 }
             }
         }
-        #skills_icon_line_1_bar_left {
+        .skills_icon_bar_left {
             width: 3px;
-            height: 120%;
+            height: 190%;
             background-color: @accentcolororange;
         }
-        #skills_icon_line_1_bar_right {
+        .skills_icon_bar_right {
             width: 3px;
-            height: 120%;
+            height: 190%;
             background-color: @accentcolororange;
+        }
+    }
+    #skills_bottom_bar {
+        height: 3px;
+        width: 1037px;
+        background-color: @accentcolororange;
+        margin-bottom: 60px;
+    }
+    #skills_style_bar_container {
+        display: flex;
+        flex-direction: row;
+        height: 3px;
+        width: 100vw;
+        #skills_style_bar {
+            height: 3px;
+            width: 25%;
+            background-color: @accentcolorgreen;
+        }
+        #skills_style_bar_empty {
+            width: 75%;
         }
     }
 }
