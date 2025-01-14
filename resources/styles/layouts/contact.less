@@ -61,7 +61,7 @@
     #form_block {
         display: flex;
         flex-direction: column;
-        margin-right: 100px;
+        margin: 80px 100px 0px 0px;
         #contact_form {
             display: flex;
             flex-direction: column;
@@ -90,7 +90,7 @@
             border: 2px solid @accentcolororange;
             border-radius: 12px;
             padding: 0px 10px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         #form_msg {
             background-color: @backgroundcolordark;
@@ -102,6 +102,7 @@
             border-radius: 12px;
             padding: 10px 10px;
             margin-bottom: 30px;
+            resize: none;
         }
         #form_dataprot_container {
             display: flex;
@@ -113,6 +114,15 @@
                 height: 30px;
                 padding: 0px;
                 margin: 0px;
+                cursor: pointer;
+            }
+            #form_checkbox:hover {
+                border: 2px solid @accentcolororange;
+                width: 30px;
+                height: 30px;
+                padding: 0px;
+                margin: 0px;
+                background-color: @accentcolorgreen;
             }
             #form_dataprot_text {
                 color: @textcolorwhite;
@@ -137,6 +147,20 @@
             text-align: center;
             width: 200px;
             height: 40px;
+            cursor: pointer;
+        }
+        #form_submit:hover {
+            background-color: @accentcolorgreen;
+            color: @textcolorwhite;
+            font-weight: 500;
+            font-size: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            background-color: rgb(26, 178, 177);
+            box-shadow: 0 0px 16px 6px rgba(26,178,177,0.5);
         }
     }
 }
