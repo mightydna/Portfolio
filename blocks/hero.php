@@ -16,9 +16,9 @@
             </div>
             <div id="link_container">
                 <div id="link_icon_box">
-                    <img src="../resources/icons/mail-icon.svg" class="link_icon">
-                    <img src="../resources/icons/linkedin-icon.svg" class="link_icon">
-                    <img src="../resources/icons/github-icon.svg" class="link_icon">
+                    <a href="http://www.google.de" target="_blank"><img src="../resources/icons/mail-icon.svg" class="link_icon"></a>
+                    <a href="http://www.google.de" target="_blank"><img src="../resources/icons/linkedin-icon.svg" class="link_icon"></a>
+                    <a href="http://www.google.de" target="_blank"><img src="../resources/icons/github-icon.svg" class="link_icon"></a>
                 </div>
                 <div id="link_icon_bar"></div>
             </div>
