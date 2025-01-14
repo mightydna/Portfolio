@@ -15,6 +15,7 @@
     require '../blocks/about.php';
     require '../blocks/skills.php';
     require '../blocks/webprojects.php';
+    require '../blocks/contact.php';
     ?>
     
 </body>
