@@ -22,15 +22,15 @@
             </div>
             <div class="form_box">
                 <label for="form_mail" class="contact_form_labels">E-Mail</label>
-                <input type="email" id="form_mail" class="form_field" name="form_mail">
+                <input type="email" id="form_mail" class="form_field" name="form_mail" required>
             </div>
             <div class="form_box">
                 <label for="form_msg" class="contact_form_labels">Deine Nachricht</label>
-                <textarea id="form_msg" name="form_msg"></textarea>
+                <textarea id="form_msg" name="form_msg" required></textarea>
             </div>
             <div id="form_dataprot_container">
-                <input type="checkbox" id="form_checkbox">
-                <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a href="" id="form_dataprot_link">Datenschutzerklärung</a>.</p>
+                <input type="checkbox" id="form_checkbox" required>
+                <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a href="" target="_blank" id="form_dataprot_link">Datenschutzerklärung</a>.</p>
             </div>
             <input type="submit" id="form_submit" name="form_submit" value="Absenden">
         </form>
