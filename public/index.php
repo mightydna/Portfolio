@@ -15,8 +15,8 @@
     require '../blocks/about.php';
     require '../blocks/skills.php';
     require '../blocks/certificates.php';
-    require '../blocks/experience.php';
     require '../blocks/webprojects.php';
+    require '../blocks/experience.php';
     require '../blocks/contact.php';
     require '../blocks/main/footer.php';
     ?>
