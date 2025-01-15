@@ -1,4 +1,94 @@
 #experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     background-color: @backgroundcolordark;
+    #experience_header_container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        #experience_header {
+            color: @textcolorwhite;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            margin: 0px 0px 0px 60px;
+            padding: 0px;
+        }
+        #experience_header_bar {
+            height: 3px;
+            width: 50%;
+            background-color: @accentcolororange;
+        }
+    }
+    #experience_block_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .experience_block1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: @backgroundcolorbright;
+            
+            border-radius: 12px;
+            margin-bottom: 60px;
+            margin-right: 100px;
+            width: 70%;
+        }
+        .experience_block2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            background-color: @backgroundcolorbright;
+            
+            border-radius: 12px;
+            margin-bottom: 60px;
+            margin-left: 100px;
+            width: 70%;
+        }
+        .experience_block_img {
+            width: 145px;
+            height: 145px;
+            border-radius: 12px;
+        }
+        .experience_block_text {
+            display: flex;
+            flex-direction: column;
+        }
+        .experience_block_text2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+        .experience_block_header {
+            margin: 0px;
+            padding: 0px;
+            color: @textcolorwhite;
+            margin: 10px 20px 10px 20px;
+
+        }
+        .experience_block_desc {
+            margin: 0px;
+            padding: 0px;
+            color: @textcolorwhite;
+            margin: 10px 20px 15px 20px;
+        }
+    }
+    #experience_bottom_container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        #experience_bottom_empty {
+            width: 50%;
+            background-color: @backgroundcolordark;
+        }
+        #experience_bottom_bar {
+            height: 3px;
+            width: 50%;
+            background-color: @accentcolorgreen;
+        }
+    }
 }
