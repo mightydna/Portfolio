@@ -1,0 +1,42 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16vh;
+    background-color: @backgroundcolordark;
+    #footer_bar {
+        height: 3px;
+        background-color: @accentcolorgreen;
+        width: 92%;
+        
+    }
+    #footer_elements_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        #footer_logo {
+            color: @accentcolorgreen;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            
+        }
+        #footer_copyright_text {
+            color: @textcolorwhite;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        #footer_b2t {
+            width: 30px;
+            height: 30px;
+            border: 3px solid @accentcolorgreen;
+            border-radius: 90px;
+            padding: 15px;
+            filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(365%) hue-rotate(131deg) brightness(95%) contrast(90%);
+            cursor: pointer;
+        }
+    }
+}

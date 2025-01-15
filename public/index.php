@@ -16,6 +16,7 @@
     require '../blocks/skills.php';
     require '../blocks/webprojects.php';
     require '../blocks/contact.php';
+    require '../blocks/main/footer.php';
     ?>
     
 </body>
