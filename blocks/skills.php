@@ -1,7 +1,7 @@
 <section id="skills">
     <div id="skills_header_block">
         <div id="skills_header_bar_left"></div>
-        <h2 id="skills_header">Meine Skills</h2>
+        <h2 id="skills_header">Meine Webskills</h2>
         <div id="skills_header_bar_right"></div>
     </div>
     <div id="skills_subtext_block">

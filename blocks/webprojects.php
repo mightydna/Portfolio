@@ -1,6 +1,6 @@
 <section id="projects">
     <div id="projects_header_box">
-        <h2 id="projects_header">Meine Projekte</h2>
+        <h2 id="projects_header">Meine Web- und Spieleprojekte</h2>
         <div id="projects_header_bar"></div>
     </div>
     <div id="projects_text_container">
