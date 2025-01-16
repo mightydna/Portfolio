@@ -1,4 +1,216 @@
 #certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: @backgroundcolorbright;
+    #certificates_skill_block {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 80px;
+        #certificates_skills_desctext_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            #certificates_header {
+                color: @textcolorwhite;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 58px;
+                text-align: center;
+                margin: 0px 0px 6px 40px;
+            }
+            #certificates_header_bar {
+                height: 3px;
+                background-color: @accentcolorgreen;
+                width: 100%;
+                margin-bottom: 60px;
+            }
+            #certificates_skills_desctext {
+                color: @textcolorwhite;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                margin-left: 40px;
+            }
+        }
+        #certificates_skills_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            #certificates_skills_block {
+                position: relative;
+                #certificates_skills_header {
+                    position: absolute;
+                    left: 50px;
+                    transform: translateY(-120%);
+                    color: @textcolorwhite;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    padding: 0px 15px;
+                    background-color: @backgroundcolorbright;
+                }
+                #certificates_skills_box {
+                    display: flex;
+                    flex-direction: column;
+                    border: 3px solid @accentcolororange;
+                    #certificates_skills_line1 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        gap: 50px;
+                        padding: 50px 60px 0px 60px;
+                        .certificates_skills_img {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 133px;
+                            height: 136px;
+                            background-color: @backgroundcolordark;
+                            border-radius: 12px;
+                            .certificates_skills_icon {
+                                height: 62px;
+                                width: 62px;
+                                margin-bottom: 10px;
+                            }
+                            .certificates_skills_name {
+                                padding: 0px;
+                                margin: 0px;
+                                color: @textcolorwhite;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                    #certificates_skills_line2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        gap: 50px;
+                        padding: 50px 60px 50px 60px;
+                        .certificates_skills_img {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 133px;
+                            height: 136px;
+                            background-color: @backgroundcolordark;
+                            border-radius: 12px;
+                            .certificates_skills_icon {
+                                height: 62px;
+                                width: 62px;
+                                margin-bottom: 10px;
+                            }
+                            .certificates_skills_name {
+                                padding: 0px;
+                                margin: 0px;
+                                color: @textcolorwhite;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #certificates_cert_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 89%;
+        border: 3px solid @accentcolororange;
+        position: relative;
+        margin-bottom: 70px;
+        #certificates_cert_block_header {
+            position: absolute;
+            right: 30px;
+            transform: translateY(-320%);
+            color: @textcolorwhite;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            padding: 0px 15px;
+            margin: 0px;
+            background-color: @backgroundcolorbright;
+        }
+        #certificates_cert_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            #certificates_cert_line {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 50px;
+                padding: 25px 0px;
+                .certificates_cert_img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 190px;
+                    height: 136px;
+                    background-color: @backgroundcolordark;
+                    border-radius: 12px;
+                    .certificates_cert_icon {
+                        width: 62px;
+                        height: 62px;
+                        margin-bottom: 10px;
+                    }
+                    .certificates_cert_name {
+                        padding: 0px;
+                        margin: 0px;
+                        color: @textcolorwhite;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    #certificates_bottom_bar_container1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        #certificates_bottom_bar_empty1 {
+            height: 3px;
+            width: 70%;
+            background-color: @backgroundcolorbright;
+        }
+        #certificates_bottom_bar1 {
+            height: 3px;
+            width: 30%;
+            background-color: @accentcolorgreen;
+        }
+    }
+    #certificates_bottom_bar_container2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        #certificates_bottom_bar_empty2 {
+            height: 3px;
+            width: 68%;
+            background-color: @backgroundcolorbright;
+        }
+        #certificates_bottom_bar2 {
+            height: 3px;
+            width: 32%;
+            background-color: @accentcolororange;
+        }
+    }
 }
