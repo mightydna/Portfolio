@@ -3,6 +3,9 @@
         <h2 id="experience_header">Meine Berufserfahrung</h2>
         <div id="experience_header_bar"></div>
     </div>
+    <div id="experience_desctext_container">
+        <p id="experience_desctext">Hier vielleicht noch ein Beschreibungstext was die Seite eigentlich aussagen soll, gesammelte Berufserfahrung auf einen Blick, zusammengefasst etc pp. Hier vielleicht noch ein Beschreibungstext was die Seite eigentlich aussagen soll, gesammelte Berufserfahrung auf einen Blick, zusammengefasst etc pp</p>
+    </div>
     <div id="experience_block_container">
         <div class="experience_block1">
             <img src="../resources/images/test.jpg" class="experience_block_img">
