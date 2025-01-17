@@ -8,21 +8,21 @@
     </div>
     <div id="experience_block_container">
         <div class="experience_block1">
-            <img src="../resources/images/test.jpg" class="experience_block_img">
+            <img src="resources/images/test.jpg" class="experience_block_img">
             <div class="experience_block_text">
                 <h3 class="experience_block_header">Browser Game Experience</h3>
                 <p class="experience_block_desc">Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen. Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen.</p>
             </div>
         </div>
         <div class="experience_block2">
-            <img src="../resources/images/test.jpg" class="experience_block_img">
+            <img src="resources/images/test.jpg" class="experience_block_img">
             <div class="experience_block_text2">
                 <h3 class="experience_block_header">Client Game Experience</h3>
                 <p class="experience_block_desc">Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen. Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen.</p>
             </div>
         </div>
         <div class="experience_block1">
-            <img src="../resources/images/test.jpg" class="experience_block_img">
+            <img src="resources/images/test.jpg" class="experience_block_img">
             <div class="experience_block_text">
                 <h3 class="experience_block_header">Mobile Game Experience</h3>
                 <p class="experience_block_desc">Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen. Beschreibungstext was ich gemacht hab der allerding auch ziemlich lang sein muss damit ich testen kann wie groß die Boxen denn sein können oder dürfen.</p>
