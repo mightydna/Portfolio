@@ -1,34 +1,28 @@
 <section>
     <?php
+        
+        session_start();
+        require '../backend/config.php';
 
-        require __DIR__ . '/../vendor/autoload.php';
-
-        use Dotenv\Dotenv;
-
-        // Lade die .env-Datei
-        $dotenv = Dotenv::createImmutable(dirname(__DIR__));
-        $dotenv->load();
-
-        // Zugriff auf Umgebungsvariablen
-        $dbHost = $_ENV['DB_HOST'];
-        $dbUser = $_ENV['DB_USERNAME'];
-        $dbPass = $_ENV['DB_PASSWORD'];
-        $dbname = $_ENV['DB_DATABASE'];
-
-        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-        $mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbname);
-        if ($mysqli->connect_errno) {
-            throw new RuntimeException('mysqli-Verbindungsfehler: ' . $mysqli->connect_error);
+        if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
+            echo ("Eingeloggt");
+            // Hier dann alle Upload und Änderungsoptionen einbauen?
+        } else {
+            echo '
+            <form action="../backend/login.php" method="POST" id="login_form">
+                <label for="login_username"></label>
+                <input type="text" name="login_username" id="login_username" placeholder="Username" required>
+                <label for="login_password"></label>
+                <input type="password" name="login_password" id="login_password" placeholder="Password" required> 
+                <input type="submit" name="login_submit" id="login_submit" value="Login">
+            </form>
+            ';
         }
 
     ?>
 
-    <form>
+    
 
-
-
-    </form>
-
-
+    
 
 </section>

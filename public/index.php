@@ -31,9 +31,6 @@
     require '../blocks/experience.php';
     require '../blocks/contact.php';
     require '../blocks/main/footer.php';
-
-
-    require 'cockpit.php';
     ?>
     
 </body>
