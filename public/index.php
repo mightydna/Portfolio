@@ -22,6 +22,7 @@
 </head>
 <body>
     <?php
+    require '../backend/config.php';
     require '../blocks/main/header.php';
     require '../blocks/hero.php';
     require '../blocks/about.php';
@@ -32,6 +33,5 @@
     require '../blocks/contact.php';
     require '../blocks/main/footer.php';
     ?>
-    
 </body>
 </html>
