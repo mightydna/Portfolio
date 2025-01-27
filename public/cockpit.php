@@ -23,6 +23,9 @@
                 echo '</div>';
             }
             echo '</div>';
+            echo '
+                <a href="../backend/logout.php"><button id="logout_button">Ausloggen</button></a>
+            ';
 
         } else {
             echo '
