@@ -28,6 +28,7 @@
                 echo '<p><a href="' . htmlspecialchars($row['livelink']) . '" target="_blank"> ' . htmlspecialchars($row['livelink']) . '</a></p>';
                 echo '<p><a href="' . htmlspecialchars($row['gitlink']) . '" target="_blank"> ' . htmlspecialchars($row['gitlink']) . '</a></p>';
                 echo '<a href="../backend/edit_project.php?id=' . urlencode($row['id']) . '"><button id="edit_button">Edit</button></a>';
+                echo '<a href="../backend/delete_project.php?id=' . urlencode($row['id']) . '"><button id="delete_button">Löschen</button></a>';
                 echo '</div>';
             }
             echo '</div>';

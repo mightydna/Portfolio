@@ -23,8 +23,6 @@
             $stmt->fetch();
             $stmt->close();
         }
- 
-        //echo $image;
 
         $stmt = $mysqli->prepare("UPDATE Projekte SET image=?, name=?, description=?, livelink=?, gitlink=? WHERE id=?");
         $stmt -> bind_param("bssssi", $null, $projektname, $description, $livelink, $gitlink, $id);
