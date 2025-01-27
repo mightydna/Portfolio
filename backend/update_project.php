@@ -10,12 +10,18 @@
         $gitlink = $_POST['edit_gitlink'];
         $id = $_POST['edit_id'];
         
-        echo $projektname;
         // Bildverarbeitung
-        $image = null;
         if (isset($_FILES['edit_image']) && $_FILES['edit_image']['error'] == 0) {
             // Wenn ein neues Bild hochgeladen wurde, lese es ein
             $image = file_get_contents($_FILES['edit_image']['tmp_name']);
+        } else {
+            // Wenn kein neues Bild hochgeladen wird, das vorhandene Bild beibehalten
+            $stmt = $mysqli->prepare("SELECT image FROM Projekte WHERE id = ?");
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+            $stmt->bind_result($image);
+            $stmt->fetch();
+            $stmt->close();
         }
  
         //echo $image;
