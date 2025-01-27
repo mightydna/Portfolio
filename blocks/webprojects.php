@@ -17,8 +17,9 @@
         
     <?php
     while ($row = $result->fetch_assoc()) {
-    echo '<div class="project_box">
-            <div class="project_box_img">' . htmlspecialchars_decode($row['image']) . '</div>
+        $image = base64_encode($row['image']);
+        echo '<div class="project_box">
+            <div class="project_box_img"><img src="data:image/png;base64,' . $image . '"></div>
             <div class="project_box_overlay">
                 <div>
                     <h3 class="project_box_header">' . htmlspecialchars($row['name']) . '</h3>
