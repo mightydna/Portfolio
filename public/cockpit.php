@@ -12,7 +12,7 @@
             echo '
                 <a href="../backend/create_project.php"><button id="create_button">Neues Projekt Anlegen</button></a>
             ';
-            // Hier dann alle Upload und Änderungsoptionen einbauen?
+
             $stmt = $mysqli->prepare("SELECT * FROM Projekte");
             $stmt -> execute();
             $result = $stmt->get_result();
@@ -32,7 +32,6 @@
                 echo '</div>';
             }
             echo '</div>';
-            
 
         } else {
             echo '
@@ -45,11 +44,6 @@
             </form>
             ';
         }
-
     ?>
-
     
-
-    
-
 </section>

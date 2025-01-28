@@ -18,7 +18,7 @@
             $stmt -> close();
 
             require 'mail.php';
-            //header("Location: ../public/index.php#contact");
+            header("Location: ../public/index.php#contact");
             exit;
 
         } else {
