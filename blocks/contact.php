@@ -15,7 +15,7 @@
         </div>  
     </div>
     <div id="form_block">
-        <form id="contact_form">
+        <form id="contact_form" method="POST">
             <div class="form_box">
                 <label for="form_name" class="contact_form_labels">Name</label>
                 <input type="text" id="form_name" class="form_field" name="form_name" required>
@@ -29,7 +29,7 @@
                 <textarea id="form_msg" name="form_msg" required></textarea>
             </div>
             <div id="form_dataprot_container">
-                <input type="checkbox" id="form_checkbox" required>
+                <input type="checkbox" id="form_checkbox" name="form_checkbox" required>
                 <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a href="" target="_blank" id="form_dataprot_link">Datenschutzerklärung</a>.</p>
             </div>
             <input type="submit" id="form_submit" name="form_submit" value="Absenden">

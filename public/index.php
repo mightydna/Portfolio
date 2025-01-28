@@ -23,6 +23,7 @@
 <body>
     <?php
     require '../backend/config.php';
+    require '../backend/contact_form.php';
     require '../blocks/main/header.php';
     require '../blocks/hero.php';
     require '../blocks/about.php';
