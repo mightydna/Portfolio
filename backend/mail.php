@@ -15,9 +15,9 @@ $mailUser = $_ENV['MAIL_USERNAME'];
 $mailPass = $_ENV['MAIL_PASSWORD'];
 
    $mail = new PHPMailer(true);
-   $_Name = $_POST['form_name'];  
-   $_Mail = $_POST['form_mail'];
-   $_Mailtext = $_POST['form_msg'];
+   $_Name = htmlspecialchars($_POST['form_name']);  
+   $_Mail = htmlspecialchars($_POST['form_mail']);
+   $_Mailtext = htmlspecialchars($_POST['form_msg']);
 
    try {
         //$mail->SMTPDebug = 2; // Debugging aktivieren
@@ -28,7 +28,7 @@ $mailPass = $_ENV['MAIL_PASSWORD'];
        $mail->Host       = $mailHost; // Host Adresse
        $mail->SMTPAuth   = true;
        $mail->Username   = $mailUser; // Absender E-Mail-Adresse
-       $mail->Password   = $mailPass;            // Account Passwort
+       $mail->Password   = $mailPass; // Account Passwort
        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Verschlüsselung
        $mail->Port       = 465; // Port abhängig von der Verschlüsselung
  

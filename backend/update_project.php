@@ -4,11 +4,11 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Hole alle Formulardaten
-        $projektname = $_POST['edit_projektname'];
-        $description = $_POST['edit_description'];
-        $livelink = $_POST['edit_livelink'];
-        $gitlink = $_POST['edit_gitlink'];
-        $id = $_POST['edit_id'];
+        $projektname = htmlspecialchars($_POST['edit_projektname']);
+        $description = htmlspecialchars($_POST['edit_description']);
+        $livelink = htmlspecialchars($_POST['edit_livelink']);
+        $gitlink = htmlspecialchars($_POST['edit_gitlink']);
+        $id = htmlspecialchars($_POST['edit_id']);
         
         // Bildverarbeitung
         if (isset($_FILES['edit_image']) && $_FILES['edit_image']['error'] == 0) {

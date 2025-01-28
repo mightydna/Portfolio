@@ -7,9 +7,9 @@
             echo ("Bitte akzeptieren die die Datenschutzerklärung um mich zu kontaktieren!");
             exit;
         }
-        $name = $_POST['form_name'];
-        $email = $_POST['form_mail'];
-        $message = $_POST['form_msg'];
+        $name = htmlspecialchars($_POST['form_name']);
+        $email = htmlspecialchars($_POST['form_mail']);
+        $message = htmlspecialchars($_POST['form_msg']);
 
         $stmt = $mysqli->prepare("INSERT INTO Kontakte (name, mail, nachricht) VALUES (?, ?, ?)");
         $stmt -> bind_param("sss", $name, $email, $message);

@@ -3,8 +3,8 @@
     require 'config.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $username = $_POST[htmlspecialchars('login_username')];
-        $password = $_POST[htmlspecialchars('login_password')];
+        $username = htmlspecialchars($_POST['login_username']);
+        $password = htmlspecialchars($_POST['login_password']);
     }
 
     if(!empty($username) && !empty($password)) {

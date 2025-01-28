@@ -23,10 +23,10 @@
         '; 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $projektname = $_POST["create_projektname"];
-        $description = $_POST["create_description"];
-        $livelink = $_POST["create_livelink"];
-        $gitlink = $_POST["create_gitlink"];
+        $projektname = htmlspecialchars($_POST["create_projektname"]);
+        $description = htmlspecialchars($_POST["create_description"]);
+        $livelink = htmlspecialchars($_POST["create_livelink"]);
+        $gitlink = htmlspecialchars($_POST["create_gitlink"]);
         
         if (isset($_FILES['create_image']) && $_FILES['create_image']['error'] == 0) {
             $image = file_get_contents($_FILES['create_image']['tmp_name']);
