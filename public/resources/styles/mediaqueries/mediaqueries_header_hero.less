@@ -1,0 +1,215 @@
+// media queries //
+// resolution //
+
+@media (max-width: 1110px) {
+    // Hero Area //
+    #hero {
+        height: 85vh;
+        #hero_content {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            #hero_img {
+                height: 400px;
+                width: 400px;
+            }
+            #hero_block {
+                display: flex;
+                flex-direction: column;
+                #hero_text_block {
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        margin: 50px 0px 0px 0px;
+                        font-size: 48px;
+                    }
+                    #subheader {
+                        margin: 0px 0px 35px 0px;
+                        font-size: 48px;
+                    }
+                    p {
+                        padding: 0px 15px 0px 0px;
+                        margin: 0px 0px 70px 0px;
+                        font-size: 20px;
+                    }
+                }
+                #link_container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    #link_icon_box {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 25px;
+                        padding: 8px 20px 8px 20px;
+                        .link_icon {
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    #link_icon_bar {
+                        height: 3px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #hero_down_arrow {
+            height: 68px;
+            width: 60px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    // Header Area //
+    header {
+        justify-content: space-between;
+        align-items: center;
+        #logo {
+            font-size: 48px;
+            margin: 0px 0px 15px 15px ;
+        }
+        nav {
+            display: none;
+        }
+    }
+    // Hero Area //
+    #hero {
+        #hero_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            #hero_img {
+                height: 300px;
+                width: 300px;
+            }
+            #hero_block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                #hero_text_block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                        margin: 0px;
+                        font-size: 48px;
+                        text-align: center;
+                    }
+                    #subheader {
+                        margin: 0px 0px 35px 0px;
+                        font-size: 48px;
+                    }
+                    p {
+                        padding: 0px 15px 0px 0px;
+                        margin: 0px 0px 70px 0px;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+                #link_container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    #link_icon_box {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 25px;
+                        padding: 8px 20px 8px 20px;
+                        .link_icon {
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    #link_icon_bar {
+                        height: 3px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #hero_down_arrow {
+            height: 57px;
+            width: 40px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    // Header Area //
+    header {
+        height: 10vh;
+        #logo {
+            font-size: 36px;
+            margin: 0px 0px 0px 15px ;
+        }
+        nav {
+            display: none;
+        }
+    }
+    // Hero Area //
+    #hero {
+        height: 90vh;
+        #hero_content {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            #hero_img {
+                height: 280px;
+                width: 280px;
+            }
+            #hero_block {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                #hero_text_block {
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                        padding: 0px;
+                        margin: 0px;
+                        font-size: 32px;
+                        text-align: center;
+                    }
+                    #subheader {
+                        padding: 0px;
+                        margin: 0px 0px 20px 0px;
+                        font-size: 32px;
+                    }
+                    p {
+                        padding: 0px 0px 0px 0px;
+                        margin: 0px 0px 20px 0px;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                #link_container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    #link_icon_box {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 25px;
+                        padding: 8px 20px 8px 20px;
+                        .link_icon {
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    #link_icon_bar {
+                        height: 3px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #hero_down_arrow {
+            height: 47px;
+            width: 30px;
+        }
+    }
+}
