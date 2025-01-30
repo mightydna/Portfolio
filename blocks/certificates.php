@@ -8,34 +8,30 @@
         <div id="certificates_skills_container">
             <div id="certificates_skills_block">
                 <h3 id="certificates_skills_header">Weitere Skills...</h3>
-                <div id="certificates_skills_box">
-                    <div id="certificates_skills_line1">
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">Figma</p>
-                        </div>
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">Photoshop</p>
-                        </div>
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">Balsamiq</p>
-                        </div>
+                <div id="certificates_skills_grid">
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">Figma</p>
                     </div>
-                    <div id="certificates_skills_line2">
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">Unity</p>
-                        </div>
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">MS Office</p>
-                        </div>
-                        <div class="certificates_skills_img">
-                            <img src="" class="certificates_skills_icon">
-                            <p class="certificates_skills_name">JIRA</p>
-                        </div>
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">Photoshop</p>
+                    </div>
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">Balsamiq</p>
+                    </div>
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">Unity</p>
+                    </div>
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">MS Office</p>
+                    </div>
+                    <div class="certificates_skills_item">
+                        <img src="" class="certificates_skills_icon">
+                        <p class="certificates_skills_name">JIRA</p>
                     </div>
                 </div>
             </div>

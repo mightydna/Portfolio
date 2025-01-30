@@ -56,70 +56,35 @@
                     padding: 0px 15px;
                     background-color: @backgroundcolorbright;
                 }
-                #certificates_skills_box {
-                    display: flex;
-                    flex-direction: column;
+                #certificates_skills_grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                    padding: 50px;
                     border: 3px solid @accentcolororange;
-                    #certificates_skills_line1 {
+                    .certificates_skills_item {
                         display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        gap: 50px;
-                        padding: 50px 60px 0px 60px;
-                        .certificates_skills_img {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            width: 133px;
-                            height: 136px;
-                            background-color: @backgroundcolordark;
-                            border-radius: 12px;
-                            .certificates_skills_icon {
-                                height: 62px;
-                                width: 62px;
-                                margin-bottom: 10px;
-                            }
-                            .certificates_skills_name {
-                                padding: 0px;
-                                margin: 0px;
-                                color: @textcolorwhite;
-                                font-size: 16px;
-                                font-weight: 700;
-                                line-height: 24px;
-                            }
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 133px;
+                        height: 136px;
+                        background-color: @backgroundcolordark;
+                        border-radius: 12px;
+                        .certificates_skills_icon {
+                            height: 62px;
+                            width: 62px;
+                            margin-bottom: 10px;
                         }
-                    }
-                    #certificates_skills_line2 {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        gap: 50px;
-                        padding: 50px 60px 50px 60px;
-                        .certificates_skills_img {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            width: 133px;
-                            height: 136px;
-                            background-color: @backgroundcolordark;
-                            border-radius: 12px;
-                            .certificates_skills_icon {
-                                height: 62px;
-                                width: 62px;
-                                margin-bottom: 10px;
-                            }
-                            .certificates_skills_name {
-                                padding: 0px;
-                                margin: 0px;
-                                color: @textcolorwhite;
-                                font-size: 16px;
-                                font-weight: 700;
-                                line-height: 24px;
-                            }
+                        .certificates_skills_name {
+                            padding: 0px;
+                            margin: 0px;
+                            color: @textcolorwhite;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 24px;
                         }
-                    }
+                        }
                 }
             }
         }
@@ -129,7 +94,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 89%;
+        width: 90%;
         border: 3px solid @accentcolororange;
         position: relative;
         margin-bottom: 70px;
