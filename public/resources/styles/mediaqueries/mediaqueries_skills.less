@@ -1,0 +1,93 @@
+// media queries //
+// resolution //
+
+@media (max-width: 850px) {
+    #skills {
+        #skills_container {
+            gap: 45px;
+            width: 80%;
+            margin: 0px 0px 0px 0px;
+            #skills_header {
+                font-size: 32px;
+                line-height: 39px;
+                padding: 0px 25px;
+                margin: 0px;
+                transform: translateY(-60%);
+                text-align: center;
+            }
+            #skills_subtext {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 0px;
+                margin: 35px 25px 0px 25px;
+            }
+        }
+        .skill_grid_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            width: 80%;
+        }
+        .skill_grid_container:last-child {
+            margin-bottom: 30px;
+        } 
+        #skills_style_bar_container {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #skills {
+        #skills_container {
+            gap: 45px;
+            width: 80%;
+            margin: 0px 0px 0px 0px;
+            #skills_header {
+                font-size: 32px;
+                line-height: 39px;
+                padding: 0px 10px;
+                margin: 0px;
+                transform: translateY(-60%);
+            }
+            #skills_subtext {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 0px;
+                margin: 35px 20px 0px 20px;
+            }
+        }
+        .skill_grid_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            
+            width: 80%;
+            .skill_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 102px;
+                height: 102px;
+                .skill_icon {
+                    height: 47px;
+                    width: 47px;
+                    margin-bottom: 10px;
+                }
+                .skill_text {
+                    font-size: 15px;
+                    line-height: 18px;
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+        .skill_grid_container:last-child {
+            margin-bottom: 60px;
+        } 
+        #skills_style_bar_container {
+            display: none;
+        }
+    }
+}
