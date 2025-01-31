@@ -63,12 +63,15 @@
                 .contact_link_img {
                     height: 50px;
                     width: 50px;
+                    transition: filter 0.3s ease-in-out, transform 0.3s ease-out, drop-shadow 0.3s ease-in-out;
                     filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(1472%) hue-rotate(341deg) brightness(105%) contrast(103%);
                     cursor: pointer;
                 }
                 .contact_link_img:hover {
                     height: 50px;
                     width: 50px;
+                    transition: filter 0.3s ease-in-out, transform 0.3s ease-out, drop-shadow 0.3s ease-in-out;
+                    transform: scale(1.05);
                     filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(1472%) hue-rotate(341deg) brightness(105%) contrast(103%) drop-shadow(0 0 10px #ffdf9b);
                     cursor: pointer;
                     border:none;
@@ -178,6 +181,7 @@
             height: 40px;
             cursor: pointer;
             border: none;
+            transition: all 0.3s ease-in-out;
         }
         #form_submit:hover {
             background-color: @accentcolorgreen;
@@ -191,6 +195,8 @@
             cursor: pointer;
             border: none;
             background-color: rgb(26, 178, 177);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
             box-shadow: 0 0px 16px 6px rgba(26,178,177,0.5);
         }
     }
