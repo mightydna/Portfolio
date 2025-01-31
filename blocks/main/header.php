@@ -1,4 +1,4 @@
-<header>  
+<header id="header">  
     <p id="logo">DOMINIK</p>
     <nav id="menu">
         <ul>
