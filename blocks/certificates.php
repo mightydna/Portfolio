@@ -10,27 +10,27 @@
                 <h3 id="certificates_skills_header">Weitere Skills...</h3>
                 <div id="certificates_skills_grid">
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/figma-icon-one-color.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">Figma</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/adobe-photoshop-svgrepo-com.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">Photoshop</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/smileyface-transparent-1080x1080.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">Balsamiq</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/unity-69.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">Unity</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/office-1.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">MS Office</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="" class="certificates_skills_icon">
+                        <img src="../public/resources/icons/jira-1.svg" class="certificates_skills_icon">
                         <p class="certificates_skills_name">JIRA</p>
                     </div>
                 </div>
