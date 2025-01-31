@@ -16,9 +16,9 @@
             </div>
             <div id="link_container">
                 <div id="link_icon_box">
-                    <a href="http://www.google.de" target="_blank"><img src="resources/icons/mail-icon.svg" class="link_icon"></a>
-                    <a href="http://www.google.de" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="link_icon"></a>
-                    <a href="http://www.google.de" target="_blank"><img src="resources/icons/github-icon.svg" class="link_icon"></a>
+                    <a href="mailto:webmaster@nageldominik.de"><img src="resources/icons/mail-icon.svg" class="link_icon"></a>
+                    <a href="https://www.linkedin.com/in/dominiknagel/" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="link_icon"></a>
+                    <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="link_icon"></a>
                 </div>
                 <div id="link_icon_bar"></div>
             </div>

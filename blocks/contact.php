@@ -7,8 +7,8 @@
         <div id="contact_linkcontainer">
             <div id="contact_link_icon_bar"></div>
             <div id="contact_link_icon_box">
-                <a href="http://www.google.de" target="_blank"><img src="resources/icons/mail-icon.svg" class="contact_link_img"></a>
-                <a href="http://www.google.de" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_link_img"></a>
+                <a href="mailto:webmaster@nageldominik.de" target="_blank"><img src="resources/icons/mail-icon.svg" class="contact_link_img"></a>
+                <a href="https://www.linkedin.com/in/dominiknagel/" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_link_img"></a>
                 <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="contact_link_img"></a>
             </div>
         </div>  
@@ -42,8 +42,8 @@
         <div id="contact_responsive_box_linkcontainer">
             <div id="contact_responsive_box_link_icon_bar"></div>
             <div id="contact_responsive_box_linkbox">
-                <a href="http://www.google.de" target="_blank"><img src="resources/icons/mail-icon.svg" class="contact_responsive_box_link_img"></a>
-                <a href="http://www.google.de" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_responsive_box_link_img"></a>
+                <a href="mailto:webmaster@nageldominik.de"><img src="resources/icons/mail-icon.svg" class="contact_responsive_box_link_img"></a>
+                <a href="https://www.linkedin.com/in/dominiknagel/" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_responsive_box_link_img"></a>
                 <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="contact_responsive_box_link_img"></a>
             </div>
         </div>
