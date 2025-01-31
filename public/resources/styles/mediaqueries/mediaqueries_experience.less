@@ -1,0 +1,147 @@
+// media queries //
+// resolution //
+
+@media (max-width: 1010px) {
+    #experience {
+        height: auto;
+        #experience_header_container {
+            #experience_header {
+                margin: 30px 0px 0px 60px;
+            }
+        }
+        #experience_desctext_container {
+            margin: 0px 60px 60px 60px;
+            #experience_desctext {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        #experience_block_container {
+            flex-direction: column;
+            align-items: center;
+            .experience_block1 {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 60px;
+                margin-right: 100px;
+                width: 70%;
+            }
+            .experience_block2 {
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-bottom: 60px;
+                margin-left: 100px;
+                width: 70%;
+            }
+            .experience_block_img {
+                width: 135px;
+                height: 135px;
+                margin: 10px;
+            }
+            .experience_block_header {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 10px 20px 10px 20px;
+    
+            }
+            .experience_block_desc {
+                font-size: 16px;
+                line-height: 19px;
+                margin: 10px 20px 15px 20px;
+            }
+        }
+        #experience_bottom_container {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #experience {
+        height: auto;
+        #experience_header_container {
+            margin-bottom: 40px;
+            #experience_header {
+                font-size: 32px;
+                line-height: 39px;
+                margin: 40px 0px 0px 50px;
+            }
+        }
+        #experience_desctext_container {
+            margin: 0px 20px 40px 20px;
+        }
+        #experience_block_container {
+            .experience_block1 {
+                margin-bottom: 30px;
+                margin-right: 50px;
+            }
+            .experience_block1:last-child {
+                margin-bottom: 50px;
+            }
+            .experience_block2 {
+                margin-bottom: 30px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #experience {
+        height: auto;
+        #experience_header_container {
+            margin-bottom: 30px;
+            #experience_header {
+                font-size: 32px;
+                line-height: 39px;
+                margin: 30px 0px 0px 60px;
+            }
+            #experience_header_bar {
+                width: 50%;
+            }
+        }
+        #experience_desctext_container {
+            margin: 0px 30px 30px 30px;
+            #experience_desctext {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        #experience_block_container {
+            .experience_block1 {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-right: 0px;
+                width: 80%;
+            }
+            .experience_block2 {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-left: 0px;
+                width: 80%;
+            }
+            .experience_block_img {
+                width: 135px;
+                height: 135px;
+                margin: 10px;
+            }
+            .experience_block_text2 {
+                align-items: flex-start;
+                text-align: left;
+            }
+            .experience_block_header {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 10px 20px 10px 20px;
+    
+            }
+            .experience_block_desc {
+                font-size: 16px;
+                line-height: 19px;
+                margin: 10px 20px 15px 20px;
+            }
+        }
+    }
+}
