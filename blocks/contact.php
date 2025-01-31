@@ -32,7 +32,14 @@
                 <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a href="" target="_blank" id="form_dataprot_link">Datenschutzerklärung</a>.</p>
             </div>
             <div id="form_submit_btn_container">
-                <input type="submit" id="form_submit" name="form_submit" value="Absenden">
+                <button id="form_submit" type="submit">
+                    <p id="form_btnText">Absenden</p>
+                    <div class="check-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                </button>
             </div>
         </form>
     </div>
@@ -49,3 +56,13 @@
         </div>
     </div>
 </section>
+<!-- Transfer to external JS file -->
+<script type="text/javascript">
+    const form_submit = document.querySelector("#form_submit");
+    const form_btnText = document.querySelector("#form_btnText");
+
+    form_submit.onclick = () => {
+        form_btnText.innerHTML = "Danke!";
+        form_submit.classList.add("active");
+    };
+</script>
