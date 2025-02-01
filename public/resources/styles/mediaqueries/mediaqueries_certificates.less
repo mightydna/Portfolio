@@ -207,6 +207,7 @@
                     }
                     #certificates_cert_container {
                         width: 100%;
+                        min-width: 400px;
                         #certificates_cert_line {
                             gap: 15px;
                             padding: 25px 0px;
@@ -221,6 +222,22 @@
                                 .certificates_cert_name {
                                     font-size: 15px;
                                     line-height: 18px;
+                                }
+                            }
+                            .certificates_cert_img:hover {
+                                width: 160px;
+                                height: 140px;
+                                .certificates_cert_icon {
+                                    width: 47px;
+                                    height: 47px;
+                                    transition: all 0.3s ease;
+                                    transform: scale(1.05);
+                                }
+                                .certificates_cert_name {
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    transition: all 0.3s ease;
+                                    transform: scale(1.05);
                                 }
                             }
                         }
@@ -345,6 +362,7 @@
                     }
                     #certificates_cert_container {
                         width: 100%;
+                        min-width: 0px;
                         #certificates_cert_line {
                             gap: 15px;
                             padding: 25px 0px;
@@ -355,6 +373,18 @@
                                     width: 47px;
                                     height: 47px;
                                     margin-bottom: 10px;
+                                }
+                                .certificates_cert_name {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .certificates_cert_img:hover {
+                                width: 140px;
+                                height: 120px;
+                                .certificates_cert_icon {
+                                    width: 47px;
+                                    height: 47px;
                                 }
                                 .certificates_cert_name {
                                     font-size: 14px;

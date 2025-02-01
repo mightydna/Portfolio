@@ -47,7 +47,7 @@
                             <p class="certificates_cert_name">Full Stack Webdeveloper</p>
                         </div>
                         <div class="certificates_cert_img">
-                            <img src="resources/icons/professional-scrum-master-i.svg" class="certificates_cert_icon">
+                            <img src="resources/icons/scrum-1.svg" class="certificates_cert_icon">
                             <p class="certificates_cert_name">SCRUM Master</p>
                         </div>
                     </div>
