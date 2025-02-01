@@ -72,7 +72,7 @@
                     width: 50px;
                     transition: filter 0.3s ease-in-out, transform 0.3s ease-out, drop-shadow 0.3s ease-in-out;
                     transform: scale(1.05);
-                    filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(1472%) hue-rotate(341deg) brightness(105%) contrast(103%) drop-shadow(0 0 10px #ffdf9b);
+                    filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(1472%) hue-rotate(341deg) brightness(105%) contrast(103%) drop-shadow(0 0 5px rgba(255, 223, 155, 0.4));
                     cursor: pointer;
                     border:none;
                 }
@@ -175,7 +175,7 @@
             color: @textcolorwhite;
             font-weight: 500;
             font-size: 20px;
-            border-radius: 40px;
+            border-radius: 15px;
             text-align: center;
             width: 200px;
             height: 40px;
@@ -197,18 +197,16 @@
         .check-box{
             width: 40px;
             height: 40px;
-            border-radius: 40px;
+            border-radius: 15px;
             box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
             position: absolute;
             top: 0;
             right: -40px;
             opacity: 0;
         }
-        
         .check-box svg{
             width: 40px;
         }
-        
         svg path{
             stroke-width: 3;
             stroke: #fff;
@@ -216,19 +214,15 @@
             stroke-dashoffset: 34;
             stroke-linecap: round;
         }
-        
-        
         #form_submit.active .check-box {
             right: 0;
             opacity: 1;
             transition: 1s;
         }
-        
         #form_submit.active #form_btnText {
             margin-right: 100px;
             transition: 1s;
         }
-        
         #form_submit.active svg path {
             stroke-dashoffset: 0;
             transition: 1s;
@@ -248,7 +242,36 @@
             background-color: rgb(26, 178, 177);
             transform: scale(1.05);
             transition: all 0.3s ease-in-out;
-            box-shadow: 0 0px 16px 6px rgba(26,178,177,0.5);
+            box-shadow: 0px 0px 20px rgba(26,178,177,0.5);
+        }
+        @keyframes fadeBack {
+            0% {
+                margin-right: 100px;
+                opacity: 1;
+            }
+            100% {
+                margin-right: 0;
+                opacity: 1;
+            }
+        }
+        @keyframes checkHide {
+            0% {
+                right: 0;
+                opacity: 1;
+            }
+            100% {
+                right: -40px;
+                opacity: 0;
+            }
+        }
+        .reverse p {
+            animation: fadeBack 1s ease-in-out forwards;
+        } 
+        .reverse .check-box {
+            animation: checkHide 1s ease-in-out forwards;
+        }
+        #form_submit.disabled {
+            pointer-events: none;
         }
     }
     #contact_responsive_box {

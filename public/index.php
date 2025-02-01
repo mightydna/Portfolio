@@ -35,4 +35,5 @@
     require '../blocks/main/footer.php';
     ?>
 </body>
+<script src="resources/scripts/main.js"></script>
 </html>

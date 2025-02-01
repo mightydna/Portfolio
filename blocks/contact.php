@@ -56,13 +56,3 @@
         </div>
     </div>
 </section>
-<!-- Transfer to external JS file -->
-<script type="text/javascript">
-    const form_submit = document.querySelector("#form_submit");
-    const form_btnText = document.querySelector("#form_btnText");
-
-    form_submit.onclick = () => {
-        form_btnText.innerHTML = "Danke!";
-        form_submit.classList.add("active");
-    };
-</script>
