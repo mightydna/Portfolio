@@ -12,7 +12,7 @@ form_submit.onclick = (e) => {
         
         let formData = new FormData(form);
 
-        fetch('../backend/contact_form.php', {
+        fetch('/api/contact_form.php', {
             method: 'POST',
             body: formData
         })
@@ -20,6 +20,7 @@ form_submit.onclick = (e) => {
         .then(data => {
             setTimeout(() => {
                 //form.submit();
+                form.reset();
                 form_submit.classList.add("reverse"); 
                 setTimeout(() => {
                     form_btnText.innerHTML = "Absenden"; 
