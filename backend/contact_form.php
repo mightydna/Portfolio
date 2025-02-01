@@ -5,7 +5,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (!isset($_POST['form_checkbox'])) {
             echo ("Bitte akzeptieren die die Datenschutzerklärung um mich zu kontaktieren!");
-            exit;
+            exit();
         }
         $name = htmlspecialchars($_POST['form_name']);
         $email = htmlspecialchars($_POST['form_mail']);
@@ -18,8 +18,9 @@
             $stmt -> close();
 
             require 'mail.php';
-            header("Location: ../public/index.php#contact");
-            exit;
+            //header("Location: index.php");
+            //echo ("Danke!");
+            exit();
 
         } else {
             echo ("Anfrage fehlgeschlagen");

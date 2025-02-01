@@ -9,16 +9,28 @@ form_submit.onclick = (e) => {
         form_submit.classList.add("disabled");
         form_btnText.innerHTML = "Danke!";
         form_submit.classList.add("active");
+        
+        let formData = new FormData(form);
 
-        setTimeout(() => {
-            form.submit();
-            form_submit.classList.add("reverse"); 
+        fetch('../backend/contact_form.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
             setTimeout(() => {
-                form_btnText.innerHTML = "Absenden"; 
-                form_submit.classList.remove("active", "reverse");
-                form_submit.classList.remove("disabled");
-            }, 1000);
-        }, 5000);
+                //form.submit();
+                form_submit.classList.add("reverse"); 
+                setTimeout(() => {
+                    form_btnText.innerHTML = "Absenden"; 
+                    form_submit.classList.remove("active", "reverse");
+                    form_submit.classList.remove("disabled");
+                }, 1000);
+            }, 5000);
+        })
+        .catch(error => {
+            console.error('Fehler:', error);
+        });
     } else {
         form.reportValidity();
     }
