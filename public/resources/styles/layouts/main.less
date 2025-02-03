@@ -6,3 +6,21 @@ body, html {
     font-family: 'Inter';
     scroll-behavior: smooth;
 }
+
+body {
+    max-width: 1280px;
+}
+
+html {
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, @accentcolorgreen 100%), url(../../../resources/images/bright-squares.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+@media (min-width: 2000px) {
+    body {
+        max-width: 1440px;
+    }
+}
