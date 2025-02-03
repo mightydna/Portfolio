@@ -43,7 +43,7 @@
                 <div id="certificates_cert_container">
                     <div id="certificates_cert_line">
                         <div class="certificates_cert_img">
-                            <img src="" class="certificates_cert_icon">
+                            <img src="resources/icons/dbe-logo-green.svg" class="certificates_cert_icon">
                             <p class="certificates_cert_name">Full Stack Webdeveloper</p>
                         </div>
                         <div class="certificates_cert_img">
