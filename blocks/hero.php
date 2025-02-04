@@ -1,6 +1,6 @@
 <section id="hero">
     <div id="hero_content">
-        <img src="resources/images/Hackerman.jpg" id="hero_img">
+        <img src="resources/images/portrait.jpg" id="hero_img">
         <div id="hero_block">
             <div id="hero_text_block">
                 <h2>Hi, ich bin Dominik</h2>

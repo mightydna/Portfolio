@@ -10,7 +10,7 @@
         </p>
     </div>
     <div id="about_img_container">
-        <img src="resources/images/Hackerman2.webp" id="about_img">
+        <img src="resources/images/about.jpg" id="about_img">
         <div id="about_img_bar"></div>
     </div>
 </section>
