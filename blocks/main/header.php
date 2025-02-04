@@ -22,7 +22,7 @@
             <li><div class="burger_menu_box"><a href="#skills">Meine Skills</a></div></li>
             <li><div class="burger_menu_box"><a href="#projects">Meine Projekte</a></div></li>
             <li><div class="burger_menu_box"><a href="#experience">Meine Erfahrung</a></div></li>
-            <li><div class="burger_menu_box"><a href="#footer">Kontakt</a></div></li>
+            <li><div class="burger_menu_box"><a href="#contact">Kontakt</a></div></li>
             <li><div class="burger_menu_box"><a href="">Sprache</a></div></li>
         </ul>
     </div>
