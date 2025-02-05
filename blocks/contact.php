@@ -50,9 +50,9 @@
         <div id="contact_responsive_box_linkcontainer">
             <div id="contact_responsive_box_link_icon_bar"></div>
             <div id="contact_responsive_box_linkbox">
-                <a href="mailto:webmaster@nageldominik.de"><img src="resources/icons/mail-icon.svg" class="contact_responsive_box_link_img"></a>
-                <a href="https://www.linkedin.com/in/dominiknagel/" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_responsive_box_link_img"></a>
-                <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="contact_responsive_box_link_img"></a>
+                <a href="mailto:webmaster@nageldominik.de"><img src="resources/icons/mail-icon.svg" class="contact_responsive_box_link_img" alt="E-Mail-Icon"></a>
+                <a href="https://www.linkedin.com/in/dominiknagel/" target="_blank"><img src="resources/icons/linkedin-icon.svg" class="contact_responsive_box_link_img" alt="LinkedIn-Icon"></a>
+                <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="contact_responsive_box_link_img" alt="GitHub-Icon"></a>
             </div>
         </div>
     </div>

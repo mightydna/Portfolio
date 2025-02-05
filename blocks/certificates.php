@@ -13,27 +13,27 @@
                 <h3 id="certificates_skills_header">Weitere Skills...</h3>
                 <div id="certificates_skills_grid">
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/figma-icon-one-color.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/figma-icon-one-color.svg" class="certificates_skills_icon" alt="Figma-Icon">
                         <p class="certificates_skills_name">Figma</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/adobe-photoshop-svgrepo-com.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/adobe-photoshop-svgrepo-com.svg" class="certificates_skills_icon" alt="Photoshop-Icon">
                         <p class="certificates_skills_name">Photoshop</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/smileyface-transparent-1080x1080.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/smileyface-transparent-1080x1080.svg" class="certificates_skills_icon" alt="Balsamiq-Icon">
                         <p class="certificates_skills_name">Balsamiq</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/unity-69.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/unity-69.svg" class="certificates_skills_icon" alt="Unity-Icon">
                         <p class="certificates_skills_name">Unity</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/office-1.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/office-1.svg" class="certificates_skills_icon" alt="MS Office-Icon">
                         <p class="certificates_skills_name">MS Office</p>
                     </div>
                     <div class="certificates_skills_item">
-                        <img src="resources/icons/jira-1.svg" class="certificates_skills_icon">
+                        <img src="resources/icons/jira-1.svg" class="certificates_skills_icon" alt="JIRA-Icon">
                         <p class="certificates_skills_name">JIRA</p>
                     </div>
                 </div>
@@ -43,11 +43,11 @@
                 <div id="certificates_cert_container">
                     <div id="certificates_cert_line">
                         <a href="certificates/FullStackWebDeveloper_Abschlussprüfung.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
-                            <img src="resources/icons/dbe-logo-green.svg" class="certificates_cert_icon">
+                            <img src="resources/icons/dbe-logo-green.svg" class="certificates_cert_icon" alt="DBE-Academy-Icon">
                             <p class="certificates_cert_name">Full Stack Webdeveloper</p>
                         </div></a>
                         <a href="certificates/ProfessionalScrumMasterI.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
-                            <img src="resources/icons/scrum-1.svg" class="certificates_cert_icon">
+                            <img src="resources/icons/scrum-1.svg" class="certificates_cert_icon" alt="SCRUM-Icon">
                             <p class="certificates_cert_name">SCRUM Master</p>
                         </div></a>
                     </div>

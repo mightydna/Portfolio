@@ -10,7 +10,7 @@
         </p>
     </div>
     <div id="about_img_container">
-        <img src="resources/images/about.jpg" id="about_img">
+        <img src="resources/images/about.jpg" id="about_img" alt="Bild von mir, sitzend auf einer Mauer">
         <div id="about_img_bar"></div>
     </div>
 </section>

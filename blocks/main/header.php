@@ -13,12 +13,12 @@
     <!-- Burgermenu -->
     <nav id="burgermenu">
         <div id="burgermenu_main">
-            <img src="resources/icons/burger-menu-icon.svg" id="header_burger_icon">
+            <img src="resources/icons/burger-menu-icon.svg" id="header_burger_icon" alt="Burgermenü-Icon">
         </div>
     </nav>
     <div id="burgermenu_overlay" >
         <div id="bmenu_overlay_close_container">
-            <img src="resources/icons/git-icon.svg" id="bmenu_overlay_close_btn">
+            <img src="resources/icons/git-icon.svg" id="bmenu_overlay_close_btn" alt="Schliessen-Icon">
         </div>
         <p id="logo">DOMINIK</p>
         <div id="burgermenu_list_container">

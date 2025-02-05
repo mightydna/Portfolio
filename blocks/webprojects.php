@@ -19,7 +19,7 @@
     while ($row = $result->fetch_assoc()) {
         $image = base64_encode($row['image']);
         echo '<div class="project_box">
-            <div class="project_box_img_container"><img src="data:image/png;base64,' . $image . '" class="project_box_img"></div>
+            <div class="project_box_img_container"><img src="data:image/png;base64,' . $image . '" class="project_box_img" alt="Projektbild"></div>
             <div class="project_box_overlay">
                 <div>
                     <h3 class="project_box_header">' . htmlspecialchars($row['name']) . '</h3>
