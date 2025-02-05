@@ -2,15 +2,38 @@
 var form_submit = document.querySelector("#form_submit");
 var form_btnText = document.querySelector("#form_btnText");
 var form = document.querySelector("#contact_form");
+
+var burgermenu_button = document.querySelector("#burgermenu");
 var burger = document.querySelector("#burgermenu_main");
-var burgermenu_list = document.querySelector("#burgermenu_overlay");
+var burgermenu_overlay = document.querySelector("#burgermenu_overlay");
+var overlay_close = document.querySelector("#bmenu_overlay_close_btn");
+var body = document.querySelector("body");
 var menu_btn_about = document.querySelector("#menu_btn_about");
 var menu_btn_contact = document.querySelector("#menu_btn_contact");
+// Burgermenu Buttons //
+var bmenu_btn_about = document.querySelector("#burger_menu_btn_about");
+var bmenu_btn_skills = document.querySelector("#burger_menu_btn_skills");
+var bmenu_btn_projects = document.querySelector("#burger_menu_btn_projects");
+var bmenu_btn_experience = document.querySelector("#burger_menu_btn_experience");
+var bmenu_btn_contact = document.querySelector("#burger_menu_btn_contact");
+var bmenu_btn_b2t = document.querySelector("#bmenu_b2t");
 //var header_size = 1;
 
-burger.addEventListener("click", function() {
-    burgermenu_list.classList.toggle("bm_visible");
-});
+burger.addEventListener("click", toggleOverlay);
+overlay_close.addEventListener("click", toggleOverlay)
+
+bmenu_btn_about.addEventListener("click", toggleOverlay);
+bmenu_btn_skills.addEventListener("click", toggleOverlay);
+bmenu_btn_projects.addEventListener("click", toggleOverlay);
+bmenu_btn_experience.addEventListener("click", toggleOverlay);
+bmenu_btn_contact.addEventListener("click", toggleOverlay);
+bmenu_btn_b2t.addEventListener("click", toggleOverlay);
+
+function toggleOverlay() {
+    burgermenu_overlay.classList.toggle("bm_visible");
+    body.classList.toggle("no_scroll");
+    burgermenu_button.classList.toggle("bm_invisible");
+}
 
 /*
 menu_btn_contact.addEventListener("click", function() {
