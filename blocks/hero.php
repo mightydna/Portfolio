@@ -24,5 +24,5 @@
             </div>
         </div>
     </div>
-    <img src="resources/icons/arrow-down.svg" id="hero_down_arrow">
+    <img src="resources/icons/arrow-down.svg" id="hero_down_arrow" alt="Pfeil nach unten - Icon">
 </section>
