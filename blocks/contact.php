@@ -28,9 +28,10 @@
                 <textarea id="form_msg" name="form_msg" required></textarea>
             </div>
             <div id="form_dataprot_container">
-                <label for="form_checkbox"></label>
+                <label for="form_checkbox">
                 <input type="checkbox" id="form_checkbox" name="form_checkbox" required>
-                <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a href="" target="_blank" id="form_dataprot_link">Datenschutzerklärung</a>.</p>
+                </label>
+                <p id="form_dataprot_text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der <a id="form_dataprot_link">Datenschutzerklärung</a>.</p>
             </div>
             <div id="form_submit_btn_container">
                 <button id="form_submit" type="submit">
@@ -55,5 +56,16 @@
                 <a href="https://github.com/mightydna" target="_blank"><img src="resources/icons/github-icon.svg" class="contact_responsive_box_link_img" alt="GitHub-Icon"></a>
             </div>
         </div>
+    </div>
+    <!-- Datenschutz Overlay -->
+    <div id="dataprot_overlay">
+        
+        <div id="dataprot_overlay_content_container">    
+            <div id="dataprot_overlay_close_container">
+                <img src="resources/icons/css3-icon.svg" alt="" id="dataprot_overlay_close_btn">
+            </div>
+            <p id="dataprot_text">Hier kommt der Datenschutztext rein</p>
+        </div>
+        
     </div>
 </section>

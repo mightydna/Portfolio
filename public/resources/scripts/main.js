@@ -18,7 +18,11 @@ var bmenu_btn_experience = document.querySelector("#burger_menu_btn_experience")
 var bmenu_btn_contact = document.querySelector("#burger_menu_btn_contact");
 var bmenu_btn_b2t = document.querySelector("#bmenu_b2t");
 //var header_size = 1;
+var dataprot_btn = document.querySelector("#form_dataprot_link");
+var dataprot_overlay = document.querySelector("#dataprot_overlay");
+var dataprot_overlay_close_btn = document.querySelector("#dataprot_overlay_close_btn");
 
+// Eventlistener //
 burger.addEventListener("click", toggleOverlay);
 overlay_close.addEventListener("click", toggleOverlay)
 
@@ -29,10 +33,18 @@ bmenu_btn_experience.addEventListener("click", toggleOverlay);
 bmenu_btn_contact.addEventListener("click", toggleOverlay);
 bmenu_btn_b2t.addEventListener("click", toggleOverlay);
 
+dataprot_btn.addEventListener("click", toggleDataprotOverlay);
+dataprot_overlay_close_btn.addEventListener("click", toggleDataprotOverlay);
+
 function toggleOverlay() {
     burgermenu_overlay.classList.toggle("bm_visible");
     body.classList.toggle("no_scroll");
     burgermenu_button.classList.toggle("bm_invisible");
+}
+
+function toggleDataprotOverlay() {
+    dataprot_overlay.classList.toggle("dataprot_visible");
+    body.classList.toggle("no_scroll");
 }
 
 /*
