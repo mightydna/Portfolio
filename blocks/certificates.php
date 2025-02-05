@@ -42,14 +42,14 @@
                 <h3 id="certificates_cert_block_header">... und Zertifikate</h3>
                 <div id="certificates_cert_container">
                     <div id="certificates_cert_line">
-                        <div class="certificates_cert_img">
+                        <a href="certificates/FullStackWebDeveloper_Abschlussprüfung.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
                             <img src="resources/icons/dbe-logo-green.svg" class="certificates_cert_icon">
                             <p class="certificates_cert_name">Full Stack Webdeveloper</p>
-                        </div>
-                        <div class="certificates_cert_img">
+                        </div></a>
+                        <a href="certificates/ProfessionalScrumMasterI.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
                             <img src="resources/icons/scrum-1.svg" class="certificates_cert_icon">
                             <p class="certificates_cert_name">SCRUM Master</p>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
             </div>

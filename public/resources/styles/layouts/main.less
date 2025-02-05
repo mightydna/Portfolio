@@ -1,3 +1,17 @@
+// Scrollbar //
+*::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: @backgroundcolordark;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: @accentcolorgreen;
+    border-radius: 5px;
+  }
+
 body, html {
     display: flex;
     flex-direction: column;
@@ -13,6 +27,7 @@ body {
 
 body.no_scroll {
     overflow: hidden;
+    margin-right: 15px;
   }
 
 html {
@@ -28,5 +43,11 @@ html {
         max-width: 1440px;
         box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.8);
 
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        margin-right: 0px !important;
     }
 }
