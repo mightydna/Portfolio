@@ -4,7 +4,7 @@
         <div id="hero_block">
             <div id="hero_text_block">
                 <h2>Hi, ich bin Dominik</h2>
-                <h2 id="subheader">Web-Entwickler</h2>
+                <h2 id="subheader">Web-Entwickler & Gamedesigner</h2>
                 <p>Ich liebe es, coole Websites und Anwendungen zu
                     bauen! Ob Frontend oder Backend - ich sorge dafür,
                     dass alles nicht nur gut aussieht, sondern auch

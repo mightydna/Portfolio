@@ -3,10 +3,8 @@
         <h2 id="about_header">Über Mich</h2>
         <div id="about_header_bar"></div>
         <p id="about_desc_text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-        <br>
-        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Hey, ich bin Dominik! Schon seit meiner Kindheit haben mich Games und digitale Medien fasziniert – heute darf ich genau das als Game Designer und Webentwickler beruflich ausleben. </br>
+        Was als Hobby begann, wurde schnell zur Leidenschaft, und mittlerweile bringe ich eine Menge Erfahrung in der Spieleentwicklung und im Webdesign mit. Egal ob kreative Konzepte, technische Umsetzung oder UX – ich liebe es, Ideen zum Leben zu erwecken und digitale Erlebnisse zu gestalten.
         </p>
     </div>
     <div id="about_img_container">

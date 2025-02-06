@@ -1,7 +1,7 @@
 <section id="skills">
     <div id="skills_container">
         <h2 id="skills_header">Meine Webskills</h2> 
-        <p id="skills_subtext">Ich konnte bereits viel Erfahrung in der Entwicklung von Projekten mit Frontend- und Backend-Technologien sowie verschiedenen Frameworks sammeln.</p>   
+        <p id="skills_subtext">Ich konnte bereits einige Erfahrung in der Entwicklung von Projekten mit Frontend- und Backend-Technologien sowie verschiedenen Frameworks sammeln.</p>   
         <div class="skill_grid_container">
             <div class="skill_box">
                 <img src="resources/icons/html5-icon.svg" class="skill_icon" alt="Html-Icon">

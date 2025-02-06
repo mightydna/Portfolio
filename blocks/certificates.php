@@ -5,7 +5,9 @@
             <div id="certificates_skills_desctext_container">
                 <h2 id="certificates_header">Weitere Skills & Zertifikate</h2>
                 <div id="certificates_header_bar"></div>
-                <p id="certificates_skills_desctext">Weitere Skills die ich erworben habe eventuell ein längerer Text hier damit man sehen kann wieviel Platz benötigt wird dafür</p>
+                <p id="certificates_skills_desctext">Über die Zeit habe ich mit verschiedensten Tools gearbeitet und dabei wertvolle Erfahrung gesammelt – von Figma und Photoshop für Design & Prototyping über Unity für interaktive Projekte bis hin zu JIRA und MS Office für effizientes Projektmanagement.</br></br>
+                Zusätzlich habe ich meine Skills mit Zertifikaten wie dem Full Stack Webdeveloper und dem Professional Scrum Master (PSM I) offiziell bestätigt.</br></br>
+                Ich bin immer neugierig darauf, neue Technologien zu entdecken und mein Wissen weiter auszubauen!</p>
             </div>
         </div>
         <div id="certificates_skills_container">
