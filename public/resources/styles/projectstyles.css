@@ -71,10 +71,12 @@ ul li::before {
 
 .project_image {
     width: 625px;
+    border-radius: 5px;
 }
 
 .project_image_vertical {
     height: 305px;
+    border-radius: 5px;
 }
 
 article {
