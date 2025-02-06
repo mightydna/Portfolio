@@ -4,7 +4,7 @@
         <div id="experience_header_bar"></div>
     </div>
     <div id="experience_desctext_container">
-        <p id="experience_desctext">Hier bekommst du einen kompakten Überblick über meine gesammelte Berufserfahrung. Von Gamedesign bis hin zu Monetarisierung und Projektmanagement – alles, was ich über die Jahre gelernt und umgesetzt habe. Jedes Projekt hat mich vor neue Herausforderungen gestellt und meinen Blick für innovative Lösungen geschärft.</p>
+        <p id="experience_desctext">Hier bekommst du einen kompakten Überblick über meine gesammelte Berufserfahrung. Von Gamedesign bis hin zu Monetarisierung und Projektmanagement – alles, was ich über die Jahre gelernt und umgesetzt habe. Jede Aufgabe hat mich vor neue Herausforderungen gestellt und meinen Blick für innovative Lösungen geschärft.</p>
     </div>
     <div id="experience_block_container">
         <div class="experience_block1">
