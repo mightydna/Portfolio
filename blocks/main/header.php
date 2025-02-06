@@ -1,5 +1,8 @@
 <header id="header">  
-    <p id="logo"><a href="#top">DOMINIK</a></p>
+    <div id="logo_block">
+        <img src="resources/icons/logo_turquoise.svg" alt="Website Icon" id="header_logo">
+        <p id="logo"><a href="#top">DOMINIK</a></p>
+    </div>
     <nav id="menu">
         <ul>
             <li><div class="menu_box" id="menu_btn_about"><a href="#about">Über Mich</a></div></li>
@@ -20,7 +23,10 @@
         <div id="bmenu_overlay_close_container">
             <img src="resources/icons/git-icon.svg" id="bmenu_overlay_close_btn" alt="Schliessen-Icon">
         </div>
-        <p id="logo">DOMINIK</p>
+        <div id="logo_block_overlay">
+            <img src="resources/icons/logo_turquoise.svg" alt="Website Icon" id="header_logo_overlay">
+            <p id="logo_overlay"><a href="#top">DOMINIK</a></p>
+        </div>
         <div id="burgermenu_list_container">
             <p>Wo möchtest du hin?</p>
             <ul id="burgermenu_list">
