@@ -19,6 +19,7 @@
     <meta name="twitter:description" value="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
 
     <title>Mein Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="resources/icons/favicon-32x32.png">
 </head>
 <body>
     <?php
