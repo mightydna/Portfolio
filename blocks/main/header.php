@@ -7,7 +7,7 @@
             <li><div class="menu_box"><a href="#projects">Meine Projekte</a></div></li>
             <li><div class="menu_box"><a href="#experience">Meine Erfahrung</a></div></li>
             <li><div class="menu_box" id="menu_btn_contact"><a href="#contact">Kontakt</a></div></li>
-            <li id="lang_select_container"><div class="menu_box">DE</div><div class="menu_box">|</div><div class="menu_box">EN</div></li>
+            <li id="lang_select_container"><div class="menu_box" class="lang_btn">DE</div><div class="menu_box">|</div><div class="menu_box" class="lang_btn">EN</div></li>
         </ul>
     </nav>
     <!-- Burgermenu -->
