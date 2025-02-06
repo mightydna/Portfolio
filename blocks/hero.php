@@ -6,7 +6,7 @@
                 <h2>Hi, ich bin Dominik</h2>
                 <h2 id="subheader">Web-Entwickler & Gamedesigner</h2>
                 <p>Ich liebe es, coole Websites, Games und Anwendungen zu
-                    bauen! Ob Frontend oder Backend - ich sorge dafür,
+                    bauen! Ob Frontend, Backend oder Konzeption - ich sorge dafür,
                     dass alles nicht nur gut aussieht, sondern auch
                     reibungslos funktioniert.
                     <br>
