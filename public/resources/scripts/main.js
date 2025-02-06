@@ -21,6 +21,10 @@ var bmenu_btn_b2t = document.querySelector("#bmenu_b2t");
 var dataprot_btn = document.querySelector("#form_dataprot_link");
 var dataprot_overlay = document.querySelector("#dataprot_overlay");
 var dataprot_overlay_close_btn = document.querySelector("#dataprot_overlay_close_btn");
+var imprint_btn = document.querySelector("#footer_copyright_text");
+var imprint_btn_small = document.querySelector("#footer_copyright_text_small");
+var imprint_overlay = document.querySelector("#imprint_overlay");
+var imprint_overlay_close_btn = document.querySelector("#imprint_overlay_close_btn");
 
 // Eventlistener //
 burger.addEventListener("click", toggleOverlay);
@@ -36,6 +40,10 @@ bmenu_btn_b2t.addEventListener("click", toggleOverlay);
 dataprot_btn.addEventListener("click", toggleDataprotOverlay);
 dataprot_overlay_close_btn.addEventListener("click", toggleDataprotOverlay);
 
+imprint_btn.addEventListener("click", toggleImprintOverlay);
+imprint_btn_small.addEventListener("click", toggleImprintOverlay);
+imprint_overlay_close_btn.addEventListener("click", toggleImprintOverlay);
+
 function toggleOverlay() {
     burgermenu_overlay.classList.toggle("bm_visible");
     body.classList.toggle("no_scroll");
@@ -44,6 +52,11 @@ function toggleOverlay() {
 
 function toggleDataprotOverlay() {
     dataprot_overlay.classList.toggle("dataprot_visible");
+    body.classList.toggle("no_scroll");
+}
+
+function toggleImprintOverlay() {
+    imprint_overlay.classList.toggle("imprint_visible");
     body.classList.toggle("no_scroll");
 }
 
