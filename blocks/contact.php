@@ -3,7 +3,7 @@
         <h2 id="contact_header">Kontakt</h2>
         <div id="contact_header_bar"></div>
         <p id="contact_text_top">Ich stehe am Anfang meiner Laufbahn als Webentwickler und suche spannende Herausforderungen, bei denen ich meine Skills einbringen und dazulernen kann. Wenn Du jemanden suchst, der motiviert und mit Spaß bei der Sache ist, melde Dich – ich freue mich auf Deine Nachricht!</p>
-        <p id="contact_text_btm">Du möchtest noch mehr über mich und meine Arbeit sehen? Schau gerne auf meinen Social-Media-Kanälen vorbei und lass Dich inspirieren.</p>
+        <p id="contact_text_btm">Du möchtest mehr über mich und meine Arbeit erfahren? Schau gerne auf meinen Profilen vorbei oder kontaktiere mich direkt per E-Mail.</p>
         <div id="contact_linkcontainer">
             <div id="contact_link_icon_bar"></div>
             <div id="contact_link_icon_box">
@@ -47,7 +47,7 @@
     </div>
     <div id="contact_responsive_box">
         <div id="contact_responsive_box_bar"></div>
-        <p id="contact_responsive_box_text">Du möchtest noch mehr über mich und meine Arbeit sehen? Schau gerne auf meinen Social-Media-Kanälen vorbei und lass Dich inspirieren.</p>
+        <p id="contact_responsive_box_text">Du möchtest mehr über mich und meine Arbeit erfahren? Schau gerne auf meinen Profilen vorbei oder kontaktiere mich direkt per E-Mail.</p>
         <div id="contact_responsive_box_linkcontainer">
             <div id="contact_responsive_box_link_icon_bar"></div>
             <div id="contact_responsive_box_linkbox">
