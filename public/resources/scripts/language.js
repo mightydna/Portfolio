@@ -158,6 +158,7 @@ function changeLanguageEn() {
                 xhr.onload = function() {
                     if (xhr.status == 200) {
                         document.getElementById("projects_main_container").innerHTML = xhr.responseText;
+                        initializeProjectSlider();
                     }
                 }
                 xhr.send();
@@ -238,6 +239,7 @@ function changeLanguageDe() {
                 xhr.onload = function() {
                     if (xhr.status == 200) {
                         document.getElementById("projects_main_container").innerHTML = xhr.responseText;
+                        initializeProjectSlider();
                     }
                 }
                 xhr.send();

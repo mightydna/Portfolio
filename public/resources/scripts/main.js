@@ -98,9 +98,8 @@ form_submit.onclick = (e) => {
     }
 };
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
+// Projektslider Funktionalität //
+function initializeProjectSlider() {
     const wrapper = document.querySelector(".projects_wrapper");
     const projects = document.querySelectorAll(".project_box");
     const prevBtn = document.getElementById("prevProject");
@@ -112,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateView() {
         const projectWidth = 328 + 35;
-        const offset = currentIndex * projectWidth; // Scrollbreite inkl. Abstand
+        const offset = currentIndex * projectWidth;
         wrapper.style.transform = `translateX(-${offset}px)`;
     }
 
@@ -129,4 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
             updateView();
         }
     });
-});
+}
+
+document.addEventListener("DOMContentLoaded", initializeProjectSlider);
