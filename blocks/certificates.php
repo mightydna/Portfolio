@@ -46,7 +46,7 @@
                     <div id="certificates_cert_line">
                         <a href="certificates/FullStackWebDeveloper_Abschlussprüfung.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
                             <img src="resources/icons/dbe-logo-green.svg" class="certificates_cert_icon" alt="DBE-Academy-Icon">
-                            <p class="certificates_cert_name">Full Stack Webdeveloper</p>
+                            <p class="certificates_cert_name" id="certificates_webdev">Full Stack Webdeveloper</p>
                         </div></a>
                         <a href="certificates/ProfessionalScrumMasterI.pdf" target="_blank" type="application/pdf"><div class="certificates_cert_img">
                             <img src="resources/icons/scrum-1.svg" class="certificates_cert_icon" alt="SCRUM-Icon">

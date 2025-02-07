@@ -16,15 +16,15 @@
     <div id="form_block">
         <form id="contact_form" method="POST">
             <div class="form_box">
-                <label for="form_name" class="contact_form_labels">Name</label>
+                <label for="form_name" class="contact_form_labels" id="contact_form_label_name">Name</label>
                 <input type="text" id="form_name" class="form_field" name="form_name" required>
             </div>
             <div class="form_box">
-                <label for="form_mail" class="contact_form_labels">E-Mail</label>
+                <label for="form_mail" class="contact_form_labels" id="contact_form_label_mail">E-Mail</label>
                 <input type="email" id="form_mail" class="form_field" name="form_mail" required>
             </div>
             <div class="form_box">
-                <label for="form_msg" class="contact_form_labels">Deine Nachricht</label>
+                <label for="form_msg" class="contact_form_labels" id="contact_form_label_msg">Deine Nachricht</label>
                 <textarea id="form_msg" name="form_msg" required></textarea>
             </div>
             <div id="form_dataprot_container">

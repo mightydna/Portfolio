@@ -37,4 +37,5 @@
     ?>
 </body>
 <script src="resources/scripts/main.js"></script>
+<script src="resources/scripts/language.js"></script>
 </html>

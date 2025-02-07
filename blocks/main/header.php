@@ -6,9 +6,9 @@
     <nav id="menu">
         <ul>
             <li><div class="menu_box" id="menu_btn_about"><a href="#about">Über Mich</a></div></li>
-            <li><div class="menu_box"><a href="#skills">Meine Skills</a></div></li>
-            <li><div class="menu_box"><a href="#projects">Meine Projekte</a></div></li>
-            <li><div class="menu_box"><a href="#experience">Meine Erfahrung</a></div></li>
+            <li><div class="menu_box" id="menu_btn_skills"><a href="#skills">Meine Skills</a></div></li>
+            <li><div class="menu_box" id="menu_btn_projects"><a href="#projects">Meine Projekte</a></div></li>
+            <li><div class="menu_box" id="menu_btn_experience"><a href="#experience">Meine Erfahrung</a></div></li>
             <li><div class="menu_box" id="menu_btn_contact"><a href="#contact">Kontakt</a></div></li>
             <li id="lang_select_container"><div class="menu_box" id="lang_btn_de">DE</div><div class="menu_box">|</div><div class="menu_box" id="lang_btn_en">EN</div></li>
         </ul>
@@ -28,7 +28,7 @@
             <p id="logo_overlay"><a href="#top">DOMINIK</a></p>
         </div>
         <div id="burgermenu_list_container">
-            <p>Wo möchtest du hin?</p>
+            <p id="burgermenu_title">Wo möchtest du hin?</p>
             <ul id="burgermenu_list">
                 <li><div class="burger_menu_box" id="burger_menu_btn_about"><a href="#about">Über Mich</a></div></li>
                 <li><div class="burger_menu_box" id="burger_menu_btn_skills"><a href="#skills">Meine Skills</a></div></li>
@@ -38,7 +38,7 @@
             </ul>
         </div>
         <div id="bmenu_language_menu">
-            <p>Sprache ändern?</p>
+            <p id="bmenu_language_menu_title">Sprache ändern?</p>
             <div id="bmenu_language_menu_select">
                 <p id="overlay_lang_btn_de">DE</p>
                 <p>|</p>

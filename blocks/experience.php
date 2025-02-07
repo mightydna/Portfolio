@@ -10,22 +10,22 @@
         <div class="experience_block1">
             <img src="resources/images/gaming-devices.jpg" class="experience_block_img" alt="">
             <div class="experience_block_text">
-                <h3 class="experience_block_header">Game-Design</h3>
-                <p class="experience_block_desc">Von der ersten Idee bis zum fertigen Spiel – ich habe Konzepte entwickelt, Mechaniken designt und Spielerlebnisse geschaffen, die fesseln und begeistern. Von Browsergames über klassische Client-Games, MMOs bis hin zu Live-Service-Games – ich habe an vielfältigen Projekten gearbeitet und dabei wertvolle Erfahrungen gesammelt.</p>
+                <h3 class="experience_block_header" id="experience_block_gamedesign">Gamedesign</h3>
+                <p class="experience_block_desc" id="experience_block_gd_desc">Von der ersten Idee bis zum fertigen Spiel – ich habe Konzepte entwickelt, Mechaniken designt und Spielerlebnisse geschaffen, die fesseln und begeistern. Von Browsergames über klassische Client-Games, MMOs bis hin zu Live-Service-Games – ich habe an vielfältigen Projekten gearbeitet und dabei wertvolle Erfahrungen gesammelt.</p>
             </div>
         </div>
         <div class="experience_block2">
             <img src="resources/images/mobile-game2.jpg" class="experience_block_img" alt="">
             <div class="experience_block_text2">
-                <h3 class="experience_block_header">Mobile Games</h3>
-                <p class="experience_block_desc">Mobile Games brauchen clevere Designs und durchdachte Nutzerführung. Ich habe an der Entwicklung und Optimierung von mobilen Spielen gearbeitet, um Spieler langfristig zu begeistern. Von Casual Games bis hin zu komplexeren Titeln – mein Ziel war es immer, eine perfekte Balance zwischen Spaß und Herausforderung zu finden.</p>
+                <h3 class="experience_block_header" id="experience_block_mobilegames">Mobile Games</h3>
+                <p class="experience_block_desc" id="experience_block_mobile_desc">Mobile Games brauchen clevere Designs und durchdachte Nutzerführung. Ich habe an der Entwicklung und Optimierung von mobilen Spielen gearbeitet, um Spieler langfristig zu begeistern. Von Casual Games bis hin zu komplexeren Titeln – mein Ziel war es immer, eine perfekte Balance zwischen Spaß und Herausforderung zu finden.</p>
             </div>
         </div>
         <div class="experience_block1">
             <img src="resources/images/meeting.jpg" class="experience_block_img" alt="">
             <div class="experience_block_text">
-                <h3 class="experience_block_header">Monetization & Projektmanagement</h3>
-                <p class="experience_block_desc">Ob smarte Monetarisierungsstrategien oder effizientes Projektmanagement – ich habe dafür gesorgt, dass Spiele nicht nur Spaß machen, sondern auch wirtschaftlich erfolgreich sind. Durch gezielte Analysen und strategische Planung konnte ich nachhaltige Monetarisierungskonzepte entwickeln, die sowohl für Spieler als auch für Entwickler Mehrwert bieten.</p>
+                <h3 class="experience_block_header" id="experience_block_monetization">Monetization & Projektmanagement</h3>
+                <p class="experience_block_desc" id="experience_block_monetization_desc">Ob smarte Monetarisierungsstrategien oder effizientes Projektmanagement – ich habe dafür gesorgt, dass Spiele nicht nur Spaß machen, sondern auch wirtschaftlich erfolgreich sind. Durch gezielte Analysen und strategische Planung konnte ich nachhaltige Monetarisierungskonzepte entwickeln, die sowohl für Spieler als auch für Entwickler Mehrwert bieten.</p>
             </div>
         </div>
     </div>
