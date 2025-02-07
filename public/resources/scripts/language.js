@@ -1,8 +1,14 @@
+const cookieValue = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("language="))
+  ?.split("=")[1];
+
 var langBtnDe = document.querySelector("#lang_btn_de");
 var langBtnEn = document.querySelector("#lang_btn_en");
 var overlayLangBtnDe = document.getElementById("overlay_lang_btn_de");
 var overlayLangBtnEn = document.getElementById("overlay_lang_btn_en");
-var lang = "de";
+var lang = cookieValue;
+
 
 // Eventlistener //
 
@@ -12,6 +18,76 @@ overlayLangBtnDe.addEventListener("click", changeLanguageDe);
 overlayLangBtnEn.addEventListener("click", changeLanguageEn);
 
 // Funktionen //
+
+document.addEventListener("DOMContentLoaded", function () {
+    const userLang = getCookie("language") || "de"; // Standard: Deutsch
+    loadLanguage(userLang);
+});
+
+function loadLanguage(lang) {
+    fetch("resources/languages/translations.json") // JSON-Datei abrufen
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector("#menu_btn_about a").textContent = data[lang].menu_about;
+                document.querySelector("#menu_btn_skills a").textContent = data[lang].menu_skills;
+                document.querySelector("#menu_btn_projects a").textContent = data[lang].menu_projects;
+                document.querySelector("#menu_btn_experience a").textContent = data[lang].menu_experience;
+                document.querySelector("#menu_btn_contact a").textContent = data[lang].menu_contact;
+
+                document.querySelector("#burgermenu_title").textContent = data[lang].burger_menu_title;
+                document.querySelector("#burger_menu_btn_about a").textContent = data[lang].burger_menu_about;
+                document.querySelector("#burger_menu_btn_skills a").textContent = data[lang].burger_menu_skills;
+                document.querySelector("#burger_menu_btn_projects a").textContent = data[lang].burger_menu_projects;
+                document.querySelector("#burger_menu_btn_experience a").textContent = data[lang].burger_menu_experience;
+                document.querySelector("#burger_menu_btn_contact a").textContent = data[lang].burger_menu_contact;
+                document.querySelector("#bmenu_language_menu_title").textContent = data[lang].burger_menu_language;
+                document.querySelector("#bmenu_b2t a").textContent = data[lang].burger_menu_backtotop;
+
+                document.querySelector("#hero_text_block h2").textContent = data[lang].hero_greeting;
+                document.querySelector("#subheader").textContent = data[lang].hero_subheader;
+                document.querySelector("#hero_text_block p").textContent = data[lang].hero_description;
+
+                document.querySelector("#about_header").textContent = data[lang].about_header;
+                document.querySelector("#about_desc_text").textContent = data[lang].about_description;
+
+                document.querySelector("#skills_header").textContent = data[lang].skills_header;
+                document.querySelector("#skills_subtext").textContent = data[lang].skills_subtext;
+
+                document.querySelector("#certificates_header").textContent = data[lang].certificates_header;
+                document.querySelector("#certificates_skills_desctext").textContent = data[lang].certificates_description;
+                document.querySelector("#certificates_skills_header").textContent = data[lang].certificates_skills_header;
+                document.querySelector("#certificates_cert_block_header").textContent = data[lang].certificates_cert_header;
+                document.querySelector("#certificates_webdev").textContent = data[lang].fullstack_dev;
+
+                // Projektpage-Keys hier einfügen //
+                
+                document.querySelector("#experience_header").textContent = data[lang].experience_header;
+                document.querySelector("#experience_desctext").textContent = data[lang].experience_description;
+                document.querySelector("#experience_block_gamedesign").textContent = data[lang].experience_gamedesign;
+                document.querySelector("#experience_block_gd_desc").textContent = data[lang].experience_gamedesign_description;
+                document.querySelector("#experience_block_mobilegames").textContent = data[lang].experience_mobile_games;
+                document.querySelector("#experience_block_mobile_desc").textContent = data[lang].experience_mobile_games_description;
+                document.querySelector("#experience_block_monetization").textContent = data[lang].experience_monetization;
+                document.querySelector("#experience_block_monetization_desc").textContent = data[lang].experience_monetization_description;
+
+                document.querySelector("#contact_header").textContent = data[lang].contact_header;
+                document.querySelector("#contact_text_top").textContent = data[lang].contact_text_top;
+                document.querySelector("#contact_text_btm").textContent = data[lang].contact_text_btm;
+                document.querySelector("#contact_form_label_name").textContent = data[lang].contact_form_name;
+                document.querySelector("#contact_form_label_mail").textContent = data[lang].contact_form_mail;
+                document.querySelector("#contact_form_label_msg").textContent = data[lang].contact_form_message;
+                var privacyText = data[lang].contact_form_privacy_text;
+                document.querySelector("#form_dataprot_text").innerHTML = `${privacyText} <a id="form_dataprot_link">Datenschutzerklärung</a>.`;
+                document.querySelector("#form_dataprot_text a").textContent = data[lang].contact_form_privacy_link;
+                document.querySelector("#form_btnText").textContent = data[lang].contact_form_submit;
+        })
+        .catch(error => console.error("Fehler beim Laden der Sprache:", error));
+}
+function getCookie(name) {
+    let match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+    return match ? match[2] : null;
+}
+
 // Sprachwechsel Englisch //
 function changeLanguageEn() {
     fetch("resources/languages/translations.json")
@@ -71,8 +147,20 @@ function changeLanguageEn() {
                 document.querySelector("#form_dataprot_text a").textContent = data["en"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["en"].contact_form_submit;
 
+                document.cookie = "language=en; path=/";
                 lang = "en";
                 languageButtonHighlight();
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "../blocks/webprojects_reload.php", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xhr.onload = function() {
+                    if (xhr.status == 200) {
+                        document.getElementById("projects_main_container").innerHTML = xhr.responseText;
+                    }
+                }
+                xhr.send();
             }
         })
         .catch(error => {
@@ -139,8 +227,20 @@ function changeLanguageDe() {
                 document.querySelector("#form_dataprot_text a").textContent = data["de"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["de"].contact_form_submit;
 
+                document.cookie = "language=de; path=/";
                 lang = "de";
                 languageButtonHighlight();
+                
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "../blocks/webprojects_reload.php", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xhr.onload = function() {
+                    if (xhr.status == 200) {
+                        document.getElementById("projects_main_container").innerHTML = xhr.responseText;
+                    }
+                }
+                xhr.send();
             }
         })
         .catch(error => {
@@ -163,3 +263,4 @@ function languageButtonHighlight() {
     }
 }
 languageButtonHighlight();
+

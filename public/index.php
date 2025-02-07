@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+    $cookie_name = "language";
+    $cookie_value = "de";
+    if(!isset($_COOKIE[$cookie_name])) {
+        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+    }
+?>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
