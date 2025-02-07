@@ -152,7 +152,7 @@ function changeLanguageEn() {
                 languageButtonHighlight();
 
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "../blocks/webprojects_reload.php", true);
+                xhr.open("POST", "/api/webprojects_reload.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 xhr.onload = function() {
@@ -232,7 +232,7 @@ function changeLanguageDe() {
                 languageButtonHighlight();
                 
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "../blocks/webprojects_reload.php", true);
+                xhr.open("POST", "/api/webprojects_reload.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 xhr.onload = function() {

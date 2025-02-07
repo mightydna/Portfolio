@@ -1,6 +1,5 @@
 <?php
-require '../backend/config.php';
-
+require('/var/www/vhosts/hosting207165.a2e85.netcup.net/nageldominik.de/httpdocs/Portfolio/backend/config.php');
 // Sprache aus dem Cookie ermitteln
 $lang = isset($_COOKIE["language"]) ? $_COOKIE["language"] : "de";
 
@@ -9,6 +8,7 @@ $stmt = $mysqli->prepare("SELECT * FROM Projekte");
 $stmt->execute();
 $result = $stmt->get_result();
 
+echo '<div class="projects_wrapper">';
 // HTML für die Projekte ausgeben
 while ($row = $result->fetch_assoc()) {
     $image = base64_encode($row['image']);
@@ -31,4 +31,11 @@ while ($row = $result->fetch_assoc()) {
         </div>
       </div>';
 }
+echo '</div>';
+echo '
+    <div class="projects_nav">
+        <button id="prevProject">&lt;</button>
+        <button id="nextProject">&gt;</button>
+    </div>
+    ';
 ?>
