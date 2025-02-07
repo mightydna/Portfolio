@@ -21,7 +21,7 @@
     </nav>
     <div id="burgermenu_overlay" >
         <div id="bmenu_overlay_close_container">
-            <img src="resources/icons/git-icon.svg" id="bmenu_overlay_close_btn" alt="Schliessen-Icon">
+            <img src="resources/icons/icons8-löschen.svg" id="bmenu_overlay_close_btn" alt="Schliessen-Icon">
         </div>
         <div id="logo_block_overlay">
             <img src="resources/icons/logo_turquoise.svg" alt="Website Icon" id="header_logo_overlay">
