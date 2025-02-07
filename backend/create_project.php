@@ -7,8 +7,12 @@
         <form action="" method="POST" id="create_form" enctype="multipart/form-data">
         <label for="create_projektname">Projektname: </label></br>
         <input type="text" name="create_projektname" id="create_projektname" placeholder="Projektname"></br>
+        <label for="create_projektname_en">Projektname EN: </label></br>
+        <input type="text" name="create_projektname_en" id="create_projektname_en" placeholder="Projektname EN"></br>
         <label for="create_description">Projektbeschreibung: </label></br>
         <textarea name="create_description" id="create_description" placeholder="Projektbeschreibung" cols="100" rows="10"></textarea></br>
+        <label for="create_description_en">Projektbeschreibung EN: </label></br>
+        <textarea name="create_description_en" id="create_description_en" placeholder="Projektbeschreibung EN" cols="100" rows="10"></textarea></br>
         <label for="create_image">Bild auswählen (nur .png!):</label></br>
         <input type="file" name="create_image" id="create_image"></br>
         <label for="create_livelink">Livelink: </label></br>
@@ -24,7 +28,9 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $projektname = htmlspecialchars($_POST["create_projektname"]);
+        $projektnameEn = htmlspecialchars($_POST["create_projektname_en"]);
         $description = htmlspecialchars($_POST["create_description"]);
+        $descriptionEn = htmlspecialchars($_POST["create_description_en"]);
         $livelink = htmlspecialchars($_POST["create_livelink"]);
         $gitlink = htmlspecialchars($_POST["create_gitlink"]);
         
@@ -35,8 +41,8 @@
             exit;
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, name, description, livelink, gitlink) VALUES (?, ?, ?, ?, ?)");
-        $stmt -> bind_param("bssss", $null, $projektname, $description, $livelink, $gitlink);
+        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, name, name_en, description, description_en, livelink, gitlink) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $stmt -> bind_param("bssssss", $null, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink);
         $stmt -> send_long_data(0, $image);
         if ($stmt -> execute()) {
             $stmt -> close();

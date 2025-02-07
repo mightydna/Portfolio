@@ -12,6 +12,7 @@
             echo '
                 <a href="../backend/create_project.php"><button id="create_button">Neues Projekt Anlegen</button></a>
             ';
+            echo '<hr>';
 
             $stmt = $mysqli->prepare("SELECT * FROM Projekte");
             $stmt -> execute();
@@ -21,14 +22,16 @@
             while ($row = $result->fetch_assoc()) {
                 $image = base64_encode($row['image']);
                 echo '<div class="project">';
-                echo '<h3>' . htmlspecialchars($row['name']) . '</h3>';
+                echo '<h3>' . htmlspecialchars($row['name']) . ' (' . htmlspecialchars($row['name_en']) . ')</h3>';
                 echo '<p>Projekt ID: ' . htmlspecialchars($row['id']) . '</p>';
-                echo '<p>' . htmlspecialchars($row['description']) . '</p>'; 
+                echo '<p><b>Deutsche Beschreibung:</b> ' . htmlspecialchars($row['description']) . '</p>';
+                echo '<p><b>Englische Beschreibung:</b> ' . htmlspecialchars($row['description_en']) . '</p>'; 
                 echo '<img src="data:image/png;base64,' . $image . '">';
-                echo '<p><a href="' . htmlspecialchars($row['livelink']) . '" target="_blank"> ' . htmlspecialchars($row['livelink']) . '</a></p>';
-                echo '<p><a href="' . htmlspecialchars($row['gitlink']) . '" target="_blank"> ' . htmlspecialchars($row['gitlink']) . '</a></p>';
+                echo '<p><b>Live-Link:</b><a href="' . htmlspecialchars($row['livelink']) . '" target="_blank"> ' . htmlspecialchars($row['livelink']) . '</a></p>';
+                echo '<p><b>Git-Link:</b><a href="' . htmlspecialchars($row['gitlink']) . '" target="_blank"> ' . htmlspecialchars($row['gitlink']) . '</a></p>';
                 echo '<a href="../backend/edit_project.php?id=' . urlencode($row['id']) . '"><button id="edit_button">Edit</button></a>';
                 echo '<a href="../backend/delete_project.php?id=' . urlencode($row['id']) . '"><button id="delete_button">Löschen</button></a>';
+                echo '<hr>';
                 echo '</div>';
             }
             echo '</div>';

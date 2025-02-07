@@ -5,7 +5,9 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Hole alle Formulardaten
         $projektname = htmlspecialchars($_POST['edit_projektname']);
+        $projektnameEn = htmlspecialchars($_POST['edit_projektname_en']);
         $description = htmlspecialchars($_POST['edit_description']);
+        $descriptionEn = htmlspecialchars($_POST['edit_description_en']);
         $livelink = htmlspecialchars($_POST['edit_livelink']);
         $gitlink = htmlspecialchars($_POST['edit_gitlink']);
         $id = htmlspecialchars($_POST['edit_id']);
@@ -24,8 +26,8 @@
             $stmt->close();
         }
 
-        $stmt = $mysqli->prepare("UPDATE Projekte SET image=?, name=?, description=?, livelink=?, gitlink=? WHERE id=?");
-        $stmt -> bind_param("bssssi", $null, $projektname, $description, $livelink, $gitlink, $id);
+        $stmt = $mysqli->prepare("UPDATE Projekte SET image=?, name=?, name_en=?, description=?, description_en=?, livelink=?, gitlink=? WHERE id=?");
+        $stmt -> bind_param("bssssssi", $null, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink, $id);
         $stmt -> send_long_data(0, $image);
         if ($stmt -> execute()) {
             $stmt -> close();

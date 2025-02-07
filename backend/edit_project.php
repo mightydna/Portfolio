@@ -23,16 +23,22 @@
             echo '
                 <form action="update_project.php" method="POST" id="edit_form" enctype="multipart/form-data">
                 <input type="text" name="edit_id" id="edit_id" value="' . $row['id'] . '" style="display: none">
+                <label for="edit_projektname">Deutscher Projektname:</label>
                 <input type="text" name="edit_projektname" id="edit_projektname" placeholder="Projektname" value="' . htmlspecialchars($row['name']) . '"></br>
-                <label for="edit_projektname">Aktueller Projektname: ' . htmlspecialchars($row['name']) . '</label></br>
-                <textarea name="edit_description" id="edit_description" placeholder="Projektbeschreibung" cols="100" rows="10">' . htmlspecialchars($row['description']) . '</textarea></br>
-                <label for="edit_description">Aktuelle Projektbeschreibung: ' . htmlspecialchars($row['description']) . '</label></br>
+                <label for="edit_projektname">Aktueller deutscher Projektname: ' . htmlspecialchars($row['name']) . '</label></br>
+                <label for="edit_projektname_en">Englischer Projektname:</label>
+                <input type="text" name="edit_projektname_en" id="edit_projektname_en" placeholder="Projektname Englisch" value="' . htmlspecialchars($row['name_en']) . '"></br>
+                <label for="edit_projektname_en">Aktueller englischer Projektname: ' . htmlspecialchars($row['name_en']) . '</label></br>
+                <textarea name="edit_description" id="edit_description" placeholder="Deutsche Projektbeschreibung" cols="100" rows="10">' . htmlspecialchars($row['description']) . '</textarea></br>
+                <label for="edit_description">Aktuelle deutsche Projektbeschreibung: ' . htmlspecialchars($row['description']) . '</label></br>
+                <textarea name="edit_description_en" id="edit_description_en" placeholder="Englische Projektbeschreibung" cols="100" rows="10">' . htmlspecialchars($row['description_en']) . '</textarea></br>
+                <label for="edit_description_en">Aktuelle englische Projektbeschreibung: ' . htmlspecialchars($row['description_en']) . '</label></br>
                 <input type="file" name="edit_image" id="edit_image"></br>
                 <label for="edit_image">Aktuelles Bild:<img src="data:image/png;base64,' . $image . '"></label></br>
                 <input type="text" name="edit_livelink" id="edit_livelink" placeholder="Livelink" value="' . htmlspecialchars($row['livelink']) . '"></br>
-                <label for="edit_livelink">Aktueller Link: ' . htmlspecialchars($row['livelink']) . '</label></br>
+                <label for="edit_livelink">Aktueller Live-Link: ' . htmlspecialchars($row['livelink']) . '</label></br>
                 <input type="text" name="edit_gitlink" id="edit_gitlink" placeholder="Gitlink" value="' . htmlspecialchars($row['gitlink']) . '"></br>
-                <label for="edit_gitlink">Aktueller Link: ' . htmlspecialchars($row['gitlink']) . '</label></br>
+                <label for="edit_gitlink">Aktueller Git-Link: ' . htmlspecialchars($row['gitlink']) . '</label></br>
                 <input type="submit" name="edit_submit" id="edit_submit" value="Übernehmen">
                 </form>
             ';
