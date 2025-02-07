@@ -14,7 +14,7 @@
         <p id="projects_desc_text"> Durch die Entwicklung von sechs unterschiedlichen Webprojekten, darinter ..., habe ich umfangreiche Erfahrung in modernen Webtechnologien, responsivem Design und  API-Integration gesammelt. Jedes Projekt hat meine Fähigkeiten im Umgang mit anspruchsvollen Anforderungen und der Umsetzung kreativer sowie funktionaler Lösungen erweitert.</p>
     </div>
     <div id="projects_main_container">
-        
+    <div class="projects_wrapper">
     <?php
     if ($_COOKIE["language"] == "de") {
         while ($row = $result->fetch_assoc()) {
@@ -52,6 +52,11 @@
         }
     }
     ?>
+    </div>
+    <div class="projects_nav">
+        <button id="prevProject">&lt;</button>
+        <button id="nextProject">&gt;</button>
+    </div>
         <!-- Projekteintrag Template -->
         <!--
         <div class="project_box">

@@ -97,3 +97,36 @@ form_submit.onclick = (e) => {
         form.reportValidity();
     }
 };
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".projects_wrapper");
+    const projects = document.querySelectorAll(".project_box");
+    const prevBtn = document.getElementById("prevProject");
+    const nextBtn = document.getElementById("nextProject");
+
+    const projectsPerView = 3;
+    let currentIndex = 0;
+    const maxIndex = Math.ceil(projects.length / projectsPerView) - 1;
+
+    function updateView() {
+        const projectWidth = 328 + 35;
+        const offset = currentIndex * projectWidth; // Scrollbreite inkl. Abstand
+        wrapper.style.transform = `translateX(-${offset}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateView();
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateView();
+        }
+    });
+});
