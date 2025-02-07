@@ -1,5 +1,5 @@
 <?php
-require('/var/www/vhosts/hosting207165.a2e85.netcup.net/nageldominik.de/httpdocs/Portfolio/backend/config.php');
+require(__DIR__ . '/../backend/config.php');
 // Sprache aus dem Cookie ermitteln
 $lang = isset($_COOKIE["language"]) ? $_COOKIE["language"] : "de";
 
