@@ -72,8 +72,8 @@ function changeLanguageEn() {
                 document.querySelector("#form_btnText").textContent = data["en"].contact_form_submit;
 
                 lang = "en";
+                languageButtonHighlight();
             }
-            
         })
         .catch(error => {
             console.log("Fehler: ", error);
@@ -140,10 +140,26 @@ function changeLanguageDe() {
                 document.querySelector("#form_btnText").textContent = data["de"].contact_form_submit;
 
                 lang = "de";
+                languageButtonHighlight();
             }
-            
         })
         .catch(error => {
             console.log("Fehler: ", error);
         });
 }
+
+// Language Button Highlight Function //
+function languageButtonHighlight() {
+    if(lang == "de") {
+        langBtnDe.classList.add("menu_box_lang");
+        overlayLangBtnDe.classList.add("burger_menu_box_lang");
+        langBtnEn.classList.remove("menu_box_lang");
+        overlayLangBtnEn.classList.remove("burger_menu_box_lang");
+    } else if(lang == "en") {
+        langBtnEn.classList.add("menu_box_lang");
+        overlayLangBtnEn.classList.add("burger_menu_box_lang");
+        langBtnDe.classList.remove("menu_box_lang");
+        overlayLangBtnDe.classList.remove("burger_menu_box_lang");
+    }
+}
+languageButtonHighlight();
