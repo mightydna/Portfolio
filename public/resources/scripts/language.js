@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadLanguage(lang) {
-    fetch("resources/languages/translations.json") // JSON-Datei abrufen
+    fetch("resources/languages/translations.json")
         .then(response => response.json())
         .then(data => {
             document.querySelector("#menu_btn_about a").textContent = data[lang].menu_about;
@@ -59,7 +59,8 @@ function loadLanguage(lang) {
                 document.querySelector("#certificates_cert_block_header").textContent = data[lang].certificates_cert_header;
                 document.querySelector("#certificates_webdev").textContent = data[lang].fullstack_dev;
 
-                // Projektpage-Keys hier einfügen //
+                document.querySelector("#projects_header").textContent = data[lang].projects_header;
+                document.querySelector("#projects_desc_text").textContent = data[lang].projects_description;
                 
                 document.querySelector("#experience_header").textContent = data[lang].experience_header;
                 document.querySelector("#experience_desctext").textContent = data[lang].experience_description;
@@ -126,7 +127,8 @@ function changeLanguageEn() {
                 document.querySelector("#certificates_cert_block_header").textContent = data["en"].certificates_cert_header;
                 document.querySelector("#certificates_webdev").textContent = data["en"].fullstack_dev;
 
-                // Projektpage-Keys hier einfügen //
+                document.querySelector("#projects_header").textContent = data["en"].projects_header;
+                document.querySelector("#projects_desc_text").textContent = data["en"].projects_description;
                 
                 document.querySelector("#experience_header").textContent = data["en"].experience_header;
                 document.querySelector("#experience_desctext").textContent = data["en"].experience_description;
@@ -208,7 +210,8 @@ function changeLanguageDe() {
                 document.querySelector("#certificates_cert_block_header").textContent = data["de"].certificates_cert_header;
                 document.querySelector("#certificates_webdev").textContent = data["de"].fullstack_dev;
 
-                // Projektpage-Keys hier einfügen //
+                document.querySelector("#projects_header").textContent = data["de"].projects_header;
+                document.querySelector("#projects_desc_text").textContent = data["de"].projects_description;
 
                 document.querySelector("#experience_header").textContent = data["de"].experience_header;
                 document.querySelector("#experience_desctext").textContent = data["de"].experience_description;
