@@ -107,7 +107,7 @@ function initializeProjectSlider() {
 
     const projectsPerView = 3;
     let currentIndex = 0;
-    const maxIndex = Math.ceil(projects.length / projectsPerView) - 1;
+    const maxIndex = Math.max(0, projects.length - projectsPerView);
 
     function updateView() {
         const projectWidth = 328 + 35;
