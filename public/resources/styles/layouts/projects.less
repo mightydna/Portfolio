@@ -229,18 +229,21 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        pointer-events: none;
     }
     
     .projects_nav button {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        background-color: rgba(29, 30, 35, 0.5);
+        color: @accentcolorgreen;
         border: none;
         padding: 10px;
         cursor: pointer;
         font-size: 24px;
+        pointer-events: auto;
     }
     
     .projects_nav button:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(29, 30, 35, 0.8);
     }
+
 }
