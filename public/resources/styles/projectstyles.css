@@ -82,7 +82,16 @@ ul li::before {
 article {
     display: flex;
     flex-direction: column;
+    border: 2px solid white;
     width: 625px;
+    padding: 10px;
+}
+
+article:hover {
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: lightgray;
 }
 
 .article_vertical {
