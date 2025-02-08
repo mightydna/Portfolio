@@ -78,6 +78,7 @@ function loadLanguage(lang) {
                 document.querySelector("#contact_form_label_msg").textContent = data[lang].contact_form_message;
                 var privacyText = data[lang].contact_form_privacy_text;
                 document.querySelector("#form_dataprot_text").innerHTML = `${privacyText} <a id="form_dataprot_link">Datenschutzerklärung</a>.`;
+                document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data[lang].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data[lang].contact_form_submit;
         })
@@ -144,6 +145,7 @@ function changeLanguageEn() {
                 document.querySelector("#contact_form_label_msg").textContent = data["en"].contact_form_message;
                 var privacyText = data["en"].contact_form_privacy_text;
                 document.querySelector("#form_dataprot_text").innerHTML = `${privacyText} <a id="form_dataprot_link">Datenschutzerklärung</a>.`;
+                document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data["en"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["en"].contact_form_submit;
 
@@ -225,6 +227,7 @@ function changeLanguageDe() {
                 document.querySelector("#contact_form_label_msg").textContent = data["de"].contact_form_message;
                 var privacyText = data["de"].contact_form_privacy_text;
                 document.querySelector("#form_dataprot_text").innerHTML = `${privacyText} <a id="form_dataprot_link">Datenschutzerklärung</a>.`;
+                document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data["de"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["de"].contact_form_submit;
 

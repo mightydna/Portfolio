@@ -1,6 +1,5 @@
 <?php
 require(__DIR__ . '/../backend/config.php');
-// Sprache aus dem Cookie ermitteln
 $lang = isset($_COOKIE["language"]) ? $_COOKIE["language"] : "de";
 
 // Datenbankabfrage
@@ -9,7 +8,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 echo '<div class="projects_wrapper">';
-// HTML für die Projekte ausgeben
+
 while ($row = $result->fetch_assoc()) {
     $image = base64_encode($row['image']);
     $name = ($lang == "en") ? htmlspecialchars($row['name_en']) : htmlspecialchars($row['name']);
