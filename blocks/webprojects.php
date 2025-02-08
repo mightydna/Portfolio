@@ -61,8 +61,7 @@
                         <h3 class="project_box_header">' . htmlspecialchars($row['name_en']) . '</h3>
                         <p class="project_box_text">' . htmlspecialchars($row['description_en']) . '</p>
                         <span class="projects_button_container">
-                            <a class="projects_live_button" href="' . htmlspecialchars($row['livelink']) . '" target="_blank">Live</a>
-                            <a class="projects_github_button" href="' . htmlspecialchars($row['gitlink']) . '" target="_blank">GitHub</a>
+                            <a class="projects_live_button" href="' . htmlspecialchars($row['livelink']) . '" target="_blank">Link</a>
                         </span>
                     </div>
                 </div>
@@ -75,8 +74,8 @@
                         <h3 class="project_box_header">' . htmlspecialchars($row['name_en']) . '</h3>
                         <p class="project_box_text">' . htmlspecialchars($row['description_en']) . '</p>
                         <span class="projects_button_container">
-                            <a class="projects_live_button" href="' . htmlspecialchars($row['livelink']) . '" target="_blank">Link</a>
-
+                            <a class="projects_live_button" href="' . htmlspecialchars($row['livelink']) . '" target="_blank">Live</a>
+                            <a class="projects_github_button" href="' . htmlspecialchars($row['gitlink']) . '" target="_blank">GitHub</a>
                         </span>
                     </div>
                 </div>
