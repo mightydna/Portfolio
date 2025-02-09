@@ -1,3 +1,6 @@
+@size: 80px;
+@speed: 3s;
+@peakopacity: 0.7;
 #hero {
     height: 80vh;
     background-color: @backgroundcolordark;
@@ -102,6 +105,23 @@
         height: 68px;
         width: 60px;
         filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(1795%) hue-rotate(131deg) brightness(92%) contrast(102%);
-        cursor: pointer;
+        width: @size;
+        height: @size;
+        animation: arrows @speed linear infinite;
     }
 }
+
+@keyframes arrows {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: @peakopacity;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
