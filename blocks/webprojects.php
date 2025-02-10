@@ -16,7 +16,7 @@
     <div id="projects_main_container">
     <div class="projects_wrapper">
     <?php
-    if ($_COOKIE["language"] == "de") {
+    if ($_COOKIE["language"] == "de" || $_COOKIE["language"] == "") {
         while ($row = $result->fetch_assoc()) {
             $image = base64_encode($row['image']);
             if ($row['gitlink'] == "") {
