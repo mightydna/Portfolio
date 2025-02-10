@@ -40,14 +40,9 @@
             font-size: 24px;
             line-height: 29px;
             margin: 0px;
-            cursor: pointer;
-            border-bottom: 2px solid @backgroundcolordark;
             padding-bottom: 2px;
         }
-        #footer_copyright_text:hover {
-            border-bottom: 2px solid white;
-            padding-bottom: 2px;
-        }
+
         #footer_b2t {
             width: 30px;
             height: 30px;
@@ -94,12 +89,6 @@
                 font-size: 24px;
                 line-height: 29px;
                 margin: 0px;
-                cursor: pointer;
-                border-bottom: 2px solid @backgroundcolordark;
-                padding-bottom: 2px;
-            }
-            #footer_copyright_text_small:hover {
-                border-bottom: 2px solid white;
                 padding-bottom: 2px;
             }
         }
@@ -168,5 +157,31 @@
     }
     .imprint_invisible {
         display: none !important;
+    }
+    #Impressum {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        border-bottom: 2px solid @backgroundcolordark;
+        width: fit-content;
+        cursor: pointer;
+    }
+    #Impressum:hover {
+        border-bottom: 2px solid white;
+    }
+    #Impressum_small {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        border-bottom: 2px solid @backgroundcolordark;
+        width: fit-content;
+        cursor: pointer;
+    }
+    #Impressum_small:hover {
+        border-bottom: 2px solid white;
     }
 }
