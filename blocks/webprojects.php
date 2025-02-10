@@ -1,6 +1,6 @@
 <?php
     require '../backend/config.php';
-    $stmt = $mysqli->prepare("SELECT * FROM Projekte");
+    $stmt = $mysqli->prepare("SELECT * FROM Projekte ORDER BY sorting_id ASC");
     $stmt -> execute();
     $result = $stmt->get_result();
 ?>

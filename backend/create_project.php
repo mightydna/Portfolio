@@ -5,6 +5,8 @@
     echo '
         <h2>Neues Projekt anlegen</h2>
         <form action="" method="POST" id="create_form" enctype="multipart/form-data">
+        <label for="sorting_id">Sortier-ID: </label></br>
+        <input type="text" name="sorting_id" id="sorting_id" placeholder="Sortier-ID"></br>
         <label for="create_projektname">Projektname: </label></br>
         <input type="text" name="create_projektname" id="create_projektname" placeholder="Projektname"></br>
         <label for="create_projektname_en">Projektname EN: </label></br>
@@ -27,6 +29,7 @@
         '; 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $sortierID = htmlspecialchars($POST["sorting_id"]);
         $projektname = htmlspecialchars($_POST["create_projektname"]);
         $projektnameEn = htmlspecialchars($_POST["create_projektname_en"]);
         $description = htmlspecialchars($_POST["create_description"]);
@@ -41,8 +44,8 @@
             exit;
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, name, name_en, description, description_en, livelink, gitlink) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $stmt -> bind_param("bssssss", $null, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink);
+        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, name, name_en, description, description_en, livelink, gitlink) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt -> bind_param("bissssss", $null, $sortingID, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink);
         $stmt -> send_long_data(0, $image);
         if ($stmt -> execute()) {
             $stmt -> close();

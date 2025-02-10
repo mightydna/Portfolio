@@ -22,6 +22,8 @@
             $image = base64_encode($row['image']);
             echo '
                 <form action="update_project.php" method="POST" id="edit_form" enctype="multipart/form-data">
+                <label for="edit_sortingid">Sortier-ID: </label>
+                <input type="text" name="edit_sortingid" id="edit_sortingid" placeholder="Sortier-ID" value="' . htmlspecialchars($row['sorting_id']) . '"></br>
                 <input type="text" name="edit_id" id="edit_id" value="' . $row['id'] . '" style="display: none">
                 <label for="edit_projektname">Deutscher Projektname:</label>
                 <input type="text" name="edit_projektname" id="edit_projektname" placeholder="Projektname" value="' . htmlspecialchars($row['name']) . '"></br>

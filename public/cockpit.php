@@ -14,7 +14,7 @@
             ';
             echo '<hr>';
 
-            $stmt = $mysqli->prepare("SELECT * FROM Projekte");
+            $stmt = $mysqli->prepare("SELECT * FROM Projekte ORDER BY sorting_id ASC");
             $stmt -> execute();
             $result = $stmt->get_result();
 
@@ -24,6 +24,7 @@
                 echo '<div class="project">';
                 echo '<h3>' . htmlspecialchars($row['name']) . ' (' . htmlspecialchars($row['name_en']) . ')</h3>';
                 echo '<p>Projekt ID: ' . htmlspecialchars($row['id']) . '</p>';
+                echo '<p>Sortier ID: ' . htmlspecialchars($row['sorting_id']) . '</p>';
                 echo '<p><b>Deutsche Beschreibung:</b> ' . htmlspecialchars($row['description']) . '</p>';
                 echo '<p><b>Englische Beschreibung:</b> ' . htmlspecialchars($row['description_en']) . '</p>'; 
                 echo '<img src="data:image/png;base64,' . $image . '">';
