@@ -10,20 +10,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/styles/fonts.css">
     <link rel="stylesheet/less" type="text/css" href="resources/styles/base/all.less" />
     <script src="resources/vendors/less.js-4.2.1/dist/less.js" type="text/javascript"></script>
 
-    <!-- og meta -->
-    <meta property="og:type" value="website" />
-    <meta property="og:title" value="Dominik Nagel - Portfolio" />
-    <meta property="og:description" value="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
-    <meta property="og:url" value="nageldominik.de" />
+    <!-- Primary Meta Tags -->
+<title>Dominik Nagel - Portfolio</title>
+<meta name="title" content="Dominik Nagel - Portfolio" />
+<meta name="description" content="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
 
-    <!-- twitter meta -->
-    <meta name="twitter:card" value="summary_large_image" />
-    <meta name="twitter:title" value="Dominik Nagel - Portfolio" />
-    <meta name="twitter:description" value="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="nageldominik.de" />
+<meta property="og:title" content="Dominik Nagel - Portfolio" />
+<meta property="og:description" content="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
+<meta property="og:image" content="/resources/images/meta/nageldominik-de.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="nageldominik.de" />
+<meta property="twitter:title" content="Dominik Nagel - Portfolio" />
+<meta property="twitter:description" content="Ich bin begeisterter Webentwickler, schaue dir mein Portfolio an!" />
+<meta property="twitter:image" content="/resources/images/meta/nageldominik-de.png" />
 
     <title>Mein Portfolio</title>
     <link rel="icon" type="image/x-icon" href="resources/icons/favicon-32x32.png">
