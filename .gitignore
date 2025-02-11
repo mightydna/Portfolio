@@ -1,2 +1,3 @@
 .env
 /backend/hash_password.php
+/public/resources/scripts/header.js
