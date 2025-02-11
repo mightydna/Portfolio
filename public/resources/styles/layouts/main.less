@@ -13,7 +13,7 @@
     border-radius: 5px;
   }
 
-body, html {
+#index_body, #main_html {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -22,7 +22,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
-body {
+#index_body {
     max-width: 1280px;
 }
 
@@ -31,7 +31,7 @@ body.no_scroll {
     margin-right: 15px;
   }
 
-html {
+#main_html {
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 1) 0%, @accentcolorgreen 100%), url(../../../resources/images/bright-squares.png);
     background-repeat: repeat;
@@ -40,7 +40,7 @@ html {
 }
 
 @media (min-width: 2000px) {
-    body {
+    #index_body {
         max-width: 1440px;
         box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.8);
 
@@ -48,7 +48,7 @@ html {
 }
 
 @media (max-width: 900px) {
-    body {
+    #index_body {
         margin-right: 0px !important;
     }
 }
