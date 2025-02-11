@@ -3,7 +3,7 @@ require(__DIR__ . '/../backend/config.php');
 $lang = isset($_COOKIE["language"]) ? $_COOKIE["language"] : "de";
 
 // Datenbankabfrage
-$stmt = $mysqli->prepare("SELECT * FROM Projekte");
+$stmt = $mysqli->prepare("SELECT * FROM Projekte ORDER BY sorting_id ASC");
 $stmt->execute();
 $result = $stmt->get_result();
 
