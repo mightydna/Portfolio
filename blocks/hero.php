@@ -5,10 +5,7 @@
             <div id="hero_text_block">
                 <h2>Hi, ich bin Dominik</h2>
                 <h2 id="subheader">Web-Entwickler & Gamedesigner</h2>
-                <p>Ich liebe es, coole Websites, Games und Anwendungen zu
-                    bauen! Ob Frontend, Backend oder Konzeption - ich sorge dafür,
-                    dass alles nicht nur gut aussieht, sondern auch
-                    reibungslos funktioniert.
+                <p>Ich entwickle spannende Websites, Games und Anwendungen! Ob Frontend, Backend oder Konzeption – alles soll nicht nur gut aussehen, sondern auch reibungslos funktionieren. Mit über 11 Jahren Erfahrung im Gamedesign erstelle ich kreative und durchdachte Designs – für Spiele und Webanwendungen. Lass uns an deinem nächsten Projekt arbeiten!
                     <br>
                     Lass uns zusammen an deinem nächsten Projekt
                     arbeiten!
