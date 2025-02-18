@@ -44,8 +44,8 @@
             exit;
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, name, name_en, description, description_en, livelink, gitlink) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt -> bind_param("bissssss", $null, $sortingID, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink);
+        $stmt = $mysqli->prepare("INSERT INTO Projekte (image, sorting_id, name, name_en, description, description_en, livelink, gitlink) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt -> bind_param("bissssss", $null, $sortierID, $projektname, $projektnameEn, $description, $descriptionEn, $livelink, $gitlink);
         $stmt -> send_long_data(0, $image);
         if ($stmt -> execute()) {
             $stmt -> close();
