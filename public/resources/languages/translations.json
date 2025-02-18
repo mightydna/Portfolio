@@ -43,7 +43,8 @@
         "contact_form_message": "Deine Nachricht",
         "contact_form_privacy_text": "Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Infos in der",
         "contact_form_privacy_link": "Datenschutzerklärung",
-        "contact_form_submit": "Absenden"
+        "contact_form_submit": "Absenden",
+        "contact_text_btm_small": "Du möchtest mehr über mich und meine Arbeit erfahren? Schau gerne auf meinen Profilen vorbei oder kontaktiere mich direkt per E-Mail."
     },
     "en": {
         "menu_about": "About Me",
@@ -61,13 +62,13 @@
         "burger_menu_backtotop": "Back to top?",
         "hero_greeting": "Hi, I'm Dominik",
         "hero_subheader": "Web Developer & Game Designer",
-        "hero_description": "I create exciting websites, games, and applications! Whether frontend, backend, or concept development – everything should not only look great but also run smoothly. With over 11 years of experience in game design, I craft creative and well-thought-out designs for games and web applications. Let's work on your next project!",
+        "hero_description": "I create exciting websites, games, and applications! Whether frontend, backend, or concept development – count on me to ensure that everything looks great and runs smoothly. With over 11 years of experience in game design, I craft creative and well-thought-out designs for games and web applications. Let's work on your next project!",
         "about_header": "About Me",
         "about_description": "Hey, I'm Dominik! Ever since my childhood, I’ve been fascinated by games and digital media – and today, I get to live that passion as a Game Designer and Web Developer.\nWhat started as a hobby quickly became a passion, and by now, I have extensive experience in game development.\n\nIn web development, I'm still at the beginning of my journey, but I'm excited to develop my skills further and work on exciting projects. Whether it's creative concepts, technical implementation, or UX – I love bringing ideas to life and creating digital experiences.",
         "skills_header": "My Web Skills",
         "skills_subtext": "I have already gained some experience in developing projects with frontend and backend technologies as well as various frameworks.",
         "certificates_header": "Additional Skills & Certificates",
-        "certificates_description": "Over time, I have worked with various tools and gained valuable experience – from Figma and Photoshop for design & prototyping to Unity for interactive projects and JIRA & MS Office for efficient project management.\n\nAdditionally, I have officially validated my skills with certificates such as the Full Stack Web Developer and the Professional Scrum Master (PSM I).\n\nI am always curious to explore new technologies and expand my knowledge!",
+        "certificates_description": "Over time, I have worked with various tools and gained valuable experience – from Photoshop / Figma for designing and prototyping, to Unity for interactive projects and JIRA / MS Office for efficient project management.\n\nMy skills have been validated with certificates such as the Full Stack Web Developer and the Professional Scrum Master (PSM I).\n\nI am always curious to explore new technologies and expand my knowledge!",
         "certificates_skills_header": "Additional Skills...",
         "certificates_cert_header": "... and Certificates",
         "fullstack_dev": "Full Stack Web Developer",
@@ -89,6 +90,7 @@
         "contact_form_message": "Your message",
         "contact_form_privacy_text": "I agree that my data will be used to process my request. More information in the",
         "contact_form_privacy_link": "Privacy Policy",
-        "contact_form_submit": "Send"
+        "contact_form_submit": "Send",
+        "contact_text_btm_small": "Would you like to learn more about me and my work? Feel free to check out my profiles or contact me directly via email."
     }
 }

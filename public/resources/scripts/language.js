@@ -82,6 +82,7 @@ function loadLanguage(lang) {
                 document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data[lang].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data[lang].contact_form_submit;
+                document.querySelector("#contact_responsive_box_text").textContent = data[lang].contact_text_btm_small;
         })
         .catch(error => console.error("Fehler beim Laden der Sprache:", error));
 }
@@ -150,6 +151,7 @@ function changeLanguageEn() {
                 document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data["en"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["en"].contact_form_submit;
+                document.querySelector("#contact_responsive_box_text").textContent = data["en"].contact_text_btm_small;
 
                 document.cookie = "language=en; path=/";
                 lang = "en";
@@ -233,6 +235,7 @@ function changeLanguageDe() {
                 document.querySelector("#form_dataprot_link").addEventListener("click", toggleDataprotOverlay);
                 document.querySelector("#form_dataprot_text a").textContent = data["de"].contact_form_privacy_link;
                 document.querySelector("#form_btnText").textContent = data["de"].contact_form_submit;
+                document.querySelector("#contact_responsive_box_text").textContent = data["de"].contact_text_btm_small;
 
                 document.cookie = "language=de; path=/";
                 lang = "de";
